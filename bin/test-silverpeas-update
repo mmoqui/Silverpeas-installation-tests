@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+PATH=$PATH:$HOME/bin
+test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/default-java
+
+WORKING_DIR="$HOME/test-update"
+repo=http://repository.silverpeas.org/files
+mssql=88.190.231.237
+postgresql=88.190.231.222
+oracle=88.190.223.108
+
+mkdir "$WORKING_DIR"
+cd "$WORKING_DIR"
+wget $repo/latest-dev
+
+VERSION=`cat latest-dev`
+ARCHIVE=silverpeas-${VERSION}-jboss6.tar.gz
+SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}"
+JBOSS_HOME=$HOME/jboss-6.1.0.Final
+customconf=$HOME/settings/CustomerSettings.xml
+oracledriver=$HOME/settings/ojdbc6_g.jar
+logfile=result.log
+log="$WORKING_DIR/$logfile"
+
+function msg {
+  echo
+  echo "$1"
+  #>> "$log"
+}
+
+function die {
+  msg "$1"
+  report
+  cd
+  rm -r "$WORKING_DIR"
+  exit 1
+}
+
+function report {
+ # cd "$WORKING_DIR"
+ # sendmail "Result of the Silverpeas update test" "$logfile"
+}
+
+function runtest {
+  IFS=':' read -ra RDBMS <<< "$1"
+  msg "Update test for ${RDBMS[1]}"
+  cd "$SILVERPEAS_HOME/setup/settings"
+  rm -f config.properties
+  echo "DB_NAME=SilverUpdate" > config.properties
+  echo "DB_USER=silverpeas" >> config.properties
+  echo "DB_PASSWD=silverpeas" >> config.properties
+  echo "DB_SERVERTYPE=${RDBMS[1]}"  >> config.properties
+  echo "DB_SERVER=${RDBMS[0]}" >> config.properties
+  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$HOME/jboss-6.1.0.Final" buildsilverpeas >> "$log"
+  msg "Update test for ${RDBMS[1]} done"
+}
+
+cd "$WORKING_DIR"
+touch "$log"
+msg "Fetching and extraction of the archive ${ARCHIVE}..."
+wget $repo/$ARCHIVE
+test $? -eq 0 || die "Cannot fetch the archive ${ARCHIVE}"
+tar zxvf $ARCHIVE
+test $? -eq 0 || die "Cannot open the archive ${ARCHIVE}"
+msg "... done" 
+cp "$customconf" "$SILVERPEAS_HOME"/setup/settings/ >> "$log"
+cp "$oracledriver" "$SILVERPEAS_HOME"/bin/jar >> "$log"
+
+runtest $postgresql:POSTGRES
+runtest $mssql:MSSQL
+runtest $oracle:ORACLE
+
+report
+cd 
+rm -r $WORKING_DIR
+exit 0

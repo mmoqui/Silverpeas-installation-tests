@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'net/smtp'
+
+f = File.open(ARGV[1])
+content = f.read
+f.close
+
+message = <<MESSAGE_END
+From: Silverpeas Test <my.tests@silverpeas.com>
+To: Miguel Moquillon <miguel.moquillon@silverpeas.com>
+MIME-Version: 1.0
+Content-type: text/plain
+Subject: #{ARGV[0]}
+
+#{content}
+
+MESSAGE_END
+
+smtp = Net::SMTP.new 'smtp.gmail.com', 587
+smtp.enable_starttls
+smtp.start('silverpeas.com', 'my.tests@silverpeas.com', '$tr@t&li@', :login) do
+  smtp.send_message(message, 'my.tests@silverpeas.com', 'miguel.moquillon@silverpeas.com')
+end
+

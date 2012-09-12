@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+tooldir=$HOME/bin/databasetool
+
+classpath="$tooldir"
+for jar in `ls "$tooldir"/jar/*.jar`; do
+  classpath=$classpath:$jar
+done
+
+groovy -cp $classpath "$tooldir/database.groovy" $*
+exit $?
