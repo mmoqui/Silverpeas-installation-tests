@@ -1,0 +1,240 @@
+#blog {
+	overflow-x:hidden;
+}
+.cellBrowseBar {
+    height: 3em;
+	margin-bottom:1em;
+}
+#blog #blogContainer #bandeau {
+	height:50px;
+	background-color:#F0F0F0;
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 1px solid #D6D6D6;
+	margin-bottom:10px;
+}
+
+#blog #blogContainer #bandeau h2 {
+	font-size:170%;
+	line-height:50px;
+	padding:0;
+	margin:0;
+}
+#blog #blogContainer #bandeau h2 a{
+	font-size:100%;
+	font-weight:100;
+	color:#333;
+	padding-left:7px;
+}
+
+#blog #blogContainer #postsList,
+#blog #blogContainer #viewPost,
+#blog #blogContainer #viewPostDraft {
+	margin-right:330px;
+}
+
+#blog #blogContainer #postsList div.post {
+	margin-bottom: 15px;
+}
+
+#blog #blogContainer #navBlog {
+	width: 310px;
+	float: right;
+}
+
+#blog #blogContainer #navBlog .yuimenu {
+	margin:0;
+	margin-bottom:10px;
+}
+ #navBlog .bgDegradeGris ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+ } 
+
+ #navBlog .bgDegradeGris ul li{
+	margin:3px 0 3px 0;
+	padding:0
+ }
+ #navBlog .bgDegradeGris ul li a{
+	padding:0 0 0 5px;
+	display:block;
+	color:#4D4D4D;
+	line-height:1.5em;
+ }
+#navBlog .bgDegradeGris ul li a:hover {
+	background-color:#fafafa;
+}
+
+#navBlog #menubar-creation-actions {
+    margin: 1em 0;
+}
+
+#blog .versCommentaires,
+#blog .categoryTicket,
+#blog .creatorTicket,
+#blog .versTopic  {
+	color:#999;
+}
+
+#blog .comment {
+	color:#000;
+}
+
+#blog #operationBlog a {
+	display:block;
+	line-height:2em;
+	padding-left:1em;
+}
+
+#blog .separateur {
+	background-image: url(/silverpeas/blog/jsp/icons/separateur.gif);
+	background-repeat: repeat-x;
+	height: 20px;
+	color:#FFF;
+}
+#blog .separateur hr {
+	display:none;
+}
+
+#blog #zoneRecherche {
+	font-size:100%;
+	color: #999999;
+}
+
+#blog #zoneRecherche form {
+   margin:0;
+   padding:10px 10px 5px 10px;
+   height:25px;
+}
+
+#blog #zoneRecherche table {
+	width:15%;
+	float:right
+}
+
+#blog .inputRecherche {
+	height:15px;
+	width:80%;
+	margin-bottom:5px;
+	float:left;
+}
+
+#blog .titreRecherche {
+	font-size: 100%;
+	font-weight: bold;
+	color: #999999;
+}
+.header h4  {
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+.header h4 a {
+   color:#333;
+}
+#titreRecherche h4 {
+    background:transparent url("/silverpeas/util/icons/Mot.gif") right top  no-repeat ;
+    height: 16px;
+}
+#titreLiens h4 {
+    background:transparent url("/silverpeas/util/icons/webLink.gif") right top  no-repeat ;
+    height: 16px;
+}
+
+#topics h4 {
+    background:transparent url("/silverpeas/util/icons/component/kmeliaSmall.gif") right top  no-repeat ;
+    height: 16px;
+}
+
+#calendar td.txtnav3 , 
+#calendar th.txtnav,
+#calendar td.intfdcolor3
+{
+	padding:6px 0;
+}
+#calendar table table td.intfdcolor3 {
+	background-color:#4D4D4D;
+}
+#archives ul {
+	max-height:185px;
+	height:185px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+
+.titreTicket a {
+	font-size:140%;
+	font-weight: bold;
+	color: #666666;
+}
+
+.infoTicket {
+	font-size: 110%;
+	font-weight: bold;
+	color: #999999;
+}
+
+.postDraft .titreTicket a {
+	color: #FF6F6F;
+}
+
+.postDraft .infoTicket {
+	color: #FF6F6F;
+}
+
+.postDraft .titreTicket .status {
+	font-size: 140%;
+	font-weight: bold;
+	color: #FF6F6F;
+}
+
+.post .status {
+	display: none;
+}
+
+#viewPost .status {
+	display: none;
+}
+
+#viewPost .titreTicket {
+	font-size: 140%;
+	font-weight: bold;
+	color: #666666;
+}
+
+#viewPostDraft .titreTicket {
+	font-size: 140%;
+	font-weight: bold;
+	color: #FF6F6F;
+}
+
+#viewPostDraft .infoTicket {
+	color: #FF6F6F;
+}
+
+#blog #blogContainer #footer {
+	clear: both;
+	margin-top:10px;
+}
+
+#calendar .txtnav {
+	font-size:11px;
+}
+#calendar  {
+	width:162px;
+	float:left;
+	height:210px;
+}
+
+#archives {
+	width:138px;
+	float:left;
+	margin-right:6px;
+}
+#archives .header h4{
+	min-width:122px;
+}
+#liens {
+	clear:both;
+}

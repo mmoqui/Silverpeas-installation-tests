@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$WORKSPACE/bin
 test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/default-java
 
-WORKING_DIR="$HOME/test-install"
+WORKING_DIR="$WORKSPACE/test-install"
 repo=http://repository.silverpeas.org/files
 mssql=88.190.231.237
 postgresql=88.190.231.222
@@ -36,7 +36,7 @@ function die {
 }
 
 function report {
-  #cd "$WORKING_DIR"
+  cd "$WORKING_DIR"
   #sendmail "Result of the Silverpeas installation test" "$logfile"
 }
 
@@ -60,7 +60,7 @@ function runtest {
 cd "$WORKING_DIR"
 touch "$log"
 msg "Fetching and extraction of the archive ${JBOSS}..."
-unzip $HOME/settings/$JBOSS
+unzip $WORKSPACE/settings/$JBOSS
 test $? -eq 0 || die "Cannot open the archive ${JBOSS}"
 msg "... done"
 msg "Fetching and extraction of the archive ${ARCHIVE}..."

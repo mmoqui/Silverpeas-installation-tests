@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$WORKSPACE/bin
 test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/default-java
 
-WORKING_DIR="$HOME/test-update"
+WORKING_DIR="$WORKSPACE/test-update"
 repo=http://repository.silverpeas.org/files
 mssql=88.190.231.237
 postgresql=88.190.231.222
@@ -16,9 +16,9 @@ wget $repo/latest-dev
 VERSION=`cat latest-dev`
 ARCHIVE=silverpeas-${VERSION}-jboss6.tar.gz
 SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}"
-JBOSS_HOME=$HOME/jboss-6.1.0.Final
-customconf=$HOME/settings/CustomerSettings.xml
-oracledriver=$HOME/settings/ojdbc6_g.jar
+JBOSS_HOME=$WORKSPACE/jboss-6.1.0.Final
+customconf=$WORKSPACE/settings/CustomerSettings.xml
+oracledriver=$WORKSPACE/settings/ojdbc6_g.jar
 logfile=result.log
 log="$WORKING_DIR/$logfile"
 
@@ -37,7 +37,7 @@ function die {
 }
 
 function report {
- # cd "$WORKING_DIR"
+  cd "$WORKING_DIR"
  # sendmail "Result of the Silverpeas update test" "$logfile"
 }
 
@@ -51,7 +51,7 @@ function runtest {
   echo "DB_PASSWD=silverpeas" >> config.properties
   echo "DB_SERVERTYPE=${RDBMS[1]}"  >> config.properties
   echo "DB_SERVER=${RDBMS[0]}" >> config.properties
-  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$HOME/jboss-6.1.0.Final" buildsilverpeas >> "$log"
+  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKSPACE/jboss-6.1.0.Final" buildsilverpeas >> "$log"
   msg "Update test for ${RDBMS[1]} done"
 }
 

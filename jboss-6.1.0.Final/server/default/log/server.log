@@ -1,0 +1,103 @@
+2012-09-05 14:37:11,766 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-2) deploy, ctxPath=/weblib
+2012-09-05 14:37:11,813 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-2) deploy, ctxPath=/website
+2012-09-05 14:37:11,863 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Démarrage de Coyote HTTP/1.1 sur http-0.0.0.0-8000
+2012-09-05 14:37:11,872 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-0.0.0.0-8009
+2012-09-05 14:37:11,873 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 3m:36s:400ms
+2012-09-05 17:52:09,731 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-09-05 17:52:09,747 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-48) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-09-05 17:52:09,775 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-48) Suspension de Coyote HTTP/1.1 sur http-0.0.0.0-8000
+2012-09-05 17:52:09,778 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-48) Arrêt de Coyote HTTP/1.1 sur http-0.0.0.0-8000
+2012-09-05 17:52:09,791 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-48) Pausing Coyote AJP/1.3 on ajp-0.0.0.0-8009
+2012-09-05 17:52:09,792 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-48) Stopping Coyote AJP/1.3 on ajp-0.0.0.0-8009
+2012-09-05 17:52:09,799 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-48) undeploy, ctxPath=/website
+2012-09-05 17:52:09,867 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-48) undeploy, ctxPath=/weblib
+2012-09-10 09:20:07,750 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-2) deploy, ctxPath=/weblib
+2012-09-10 09:20:07,788 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-2) deploy, ctxPath=/website
+2012-09-10 09:20:07,846 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Démarrage de Coyote HTTP/1.1 sur http-0.0.0.0-8000
+2012-09-10 09:20:07,861 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-0.0.0.0-8009
+2012-09-10 09:20:07,862 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 2m:50s:826ms
+2012-09-10 09:23:22,482 INFO  [com.metaparadigm.jsonrpc.JSONRPCBridge] (http-0.0.0.0-8000-1) registered local arg resolver com.metaparadigm.jsonrpc.HttpServletRequestArgResolver for local class javax.servlet.http.HttpServletRequest with context javax.servlet.http.HttpServletRequest
+2012-09-10 09:23:22,485 INFO  [com.metaparadigm.jsonrpc.JSONRPCBridge] (http-0.0.0.0-8000-1) registered local arg resolver com.metaparadigm.jsonrpc.HttpSessionArgResolver for local class javax.servlet.http.HttpSession with context javax.servlet.http.HttpServletRequest
+2012-09-10 09:23:22,485 INFO  [com.metaparadigm.jsonrpc.JSONRPCBridge] (http-0.0.0.0-8000-1) registered local arg resolver com.metaparadigm.jsonrpc.JSONRPCBridgeServletArgResolver for local class com.metaparadigm.jsonrpc.JSONRPCBridge with context javax.servlet.http.HttpServletRequest
+2012-09-10 09:23:32,318 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0015 : Loading DD for the portlet application : silverpeas
+2012-09-10 09:23:32,443 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: HelloSilverpeasPortlet
+2012-09-10 09:23:32,444 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: LastPublicationsPortlet
+2012-09-10 09:23:32,445 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: NextEventsPortlet
+2012-09-10 09:23:32,446 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: FavoriteQueriesPortlet
+2012-09-10 09:23:32,446 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: ComponentInstancePortlet
+2012-09-10 09:23:32,447 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: MyBookmarksPortlet
+2012-09-10 09:23:32,448 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: MyTodosPortlet
+2012-09-10 09:23:32,448 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: QuickInfosPortlet
+2012-09-10 09:23:32,449 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: MyCheckOutFiles
+2012-09-10 09:23:32,450 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: MyNotificationsPortlet
+2012-09-10 09:23:32,450 INFO  [debug.com.sun.portal.portletcontainer.appengine.impl] (http-0.0.0.0-8000-2) PSPL_PAECSPPAI0012 : Portlet Initialized: IFramePortlet
+2012-09-10 09:23:32,988 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:23:32,990 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:23:33,238 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:23:33,814 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:23:34,282 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-2) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 09:43:32,653 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-3) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:43:32,654 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-3) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:43:32,672 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-3) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:43:32,684 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-3) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:43:32,699 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-3) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 09:43:36,065 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:43:36,075 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:43:36,076 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:43:36,106 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:43:36,116 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-5) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 09:43:52,988 INFO  [com.sun.jersey.api.core.PackagesResourceConfig] (http-0.0.0.0-8000-3) Scanning for root resource and provider classes in the packages:
+  org.codehaus.jackson.jaxrs
+  com.silverpeas.web.mappers
+2012-09-10 09:43:53,094 INFO  [com.sun.jersey.spi.spring.container.servlet.SpringServlet] (http-0.0.0.0-8000-3) Using default applicationContext
+2012-09-10 09:43:53,098 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, commentResource, of type com.silverpeas.comment.web.CommentResource as a root resource class
+2012-09-10 09:43:53,098 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, subscriptionResource, of type com.silverpeas.subscribe.web.SubscriptionResource as a root resource class
+2012-09-10 09:43:53,099 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, unsubscribeResource, of type com.silverpeas.subscribe.web.UnsubscribeResource as a root resource class
+2012-09-10 09:43:53,099 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, subscribeResource, of type com.silverpeas.subscribe.web.SubscribeResource as a root resource class
+2012-09-10 09:43:53,099 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, userProfileResource, of type com.silverpeas.profile.web.UserProfileResource as a root resource class
+2012-09-10 09:43:53,099 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, userGroupProfileResource, of type com.silverpeas.profile.web.UserGroupProfileResource as a root resource class
+2012-09-10 09:43:53,100 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, sharingResource, of type org.silverpeas.sharing.web.SharingResource as a root resource class
+2012-09-10 09:43:53,100 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, bundleResource, of type com.silverpeas.bundle.web.BundleResource as a root resource class
+2012-09-10 09:43:53,101 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, invitationResource, of type com.silverpeas.socialnetwork.invitation.web.InvitationResource as a root resource class
+2012-09-10 09:43:53,101 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, pdcClassificationResource, of type com.silverpeas.pdc.web.PdcClassificationResource as a root resource class
+2012-09-10 09:43:53,101 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, pdcPredefinedClassificationResource, of type com.silverpeas.pdc.web.PdcPredefinedClassificationResource as a root resource class
+2012-09-10 09:43:53,101 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, pdcResource, of type com.silverpeas.pdc.web.PdcResource as a root resource class
+2012-09-10 09:43:53,102 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, RSSResource, of type com.silverpeas.rssAgregator.web.RSSResource as a root resource class
+2012-09-10 09:43:53,102 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, publicationResource, of type org.silverpeas.publication.web.PublicationResource as a root resource class
+2012-09-10 09:43:53,102 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, nodeResource, of type org.silverpeas.node.web.NodeResource as a root resource class
+2012-09-10 09:43:53,103 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, attachmentRessource, of type com.silverpeas.attachment.web.AttachmentRessource as a root resource class
+2012-09-10 09:43:53,103 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, questionResource, of type com.silverpeas.questionReply.web.QuestionResource as a root resource class
+2012-09-10 09:43:53,103 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, replyResource, of type com.silverpeas.questionReply.web.ReplyResource as a root resource class
+2012-09-10 09:43:53,104 INFO  [com.sun.jersey.spi.spring.container.SpringComponentProviderFactory] (http-0.0.0.0-8000-3) Registering Spring bean, almanachICSProducer, of type com.stratelia.webactiv.almanach.servlets.AlmanachICSProducer as a root resource class
+2012-09-10 09:43:53,107 INFO  [com.sun.jersey.server.impl.application.WebApplicationImpl] (http-0.0.0.0-8000-3) Initiating Jersey application, version 'Jersey: 1.13 06/29/2012 05:14 PM'
+2012-09-10 09:45:32,274 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:45:32,274 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:45:32,298 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:45:32,312 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:45:32,326 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-2) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 09:46:25,769 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (http-0.0.0.0-8000-2) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2012-09-10 09:47:47,212 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:47:47,245 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:47:47,245 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:47:47,260 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-2) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:47:47,261 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-2) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 09:48:24,895 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (http-0.0.0.0-8000-1) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2012-09-10 09:48:50,255 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:48:50,255 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:48:50,274 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:48:50,277 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:48:50,285 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-5) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 09:48:53,074 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference nbEvents, value is 5
+2012-09-10 09:48:53,094 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference nbPublis, value is 5
+2012-09-10 09:48:53,095 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference maxAge, value is |0
+2012-09-10 09:48:53,113 INFO  [com.silverpeas.portlets.context.window.impl] (http-0.0.0.0-8000-5) PSPL_PCCTXCSPPCI0014 : Loading preference displayDescription, value is |@@$$EMPTY_STRING$$@@
+2012-09-10 09:48:53,118 INFO  [com.silverpeas.portlets.portal] (http-0.0.0.0-8000-5) PSPCD_CSPPD0022 : Number for Portlet Windows Displayed - thin: 4, thick: 5
+2012-09-10 10:01:15,918 INFO  [org.jboss.system.server.jmx.JMXKernel] (Thread-126) Server exit called, exiting the JVM now!
+2012-09-10 10:01:15,923 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-09-10 10:01:15,928 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-127) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-09-10 10:01:15,933 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-127) Suspension de Coyote HTTP/1.1 sur http-0.0.0.0-8000
+2012-09-10 10:01:15,938 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-127) Arrêt de Coyote HTTP/1.1 sur http-0.0.0.0-8000
+2012-09-10 10:01:15,945 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-127) Pausing Coyote AJP/1.3 on ajp-0.0.0.0-8009
+2012-09-10 10:01:15,948 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-127) Stopping Coyote AJP/1.3 on ajp-0.0.0.0-8009
+2012-09-10 10:01:15,967 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-127) undeploy, ctxPath=/website
+2012-09-10 10:01:16,005 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (Thread-127) undeploy, ctxPath=/weblib

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: ips
+Build-Jdk: 1.6.0_22
+Specification-Title: JBossAS 6.x Administration Console
+Specification-Version: 1.4.0.SP2
+Specification-Vendor: JBoss, by Red Hat
+Implementation-Title: JBossAS 6.x Administration Console
+Implementation-Version: 1.4.0.SP2
+Implementation-Vendor-Id: org.jboss.jopr
+Implementation-Vendor: JBoss, by Red Hat
+Build-Number: 1012
+Build-Time: 12/22/10 08:29 PM GMT
+Java-Vendor: Sun Microsystems Inc.
+Java-Version: 1.6.0_22
+Maven-Version: 3.0.1
+Os-Arch: amd64
+Os-Name: Linux
+Os-Version: 2.6.35.6-48.fc14.x86_64
+

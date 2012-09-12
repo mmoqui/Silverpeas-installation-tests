@@ -1,0 +1,1359 @@
+09:17:17,029 INFO  [AbstractJBossASServerBase] Server Configuration:
+
+	JBOSS_HOME URL: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/
+	Bootstrap: $JBOSS_HOME/server/default/conf/bootstrap.xml
+	Common Base: $JBOSS_HOME/common/
+	Common Library: $JBOSS_HOME/common/lib/
+	Server Name: default
+	Server Base: $JBOSS_HOME/server/
+	Server Library: $JBOSS_HOME/server/default/lib/
+	Server Config: $JBOSS_HOME/server/default/conf/
+	Server Home: $JBOSS_HOME/server/default/
+	Server Data: $JBOSS_HOME/server/default/data/
+	Server Log: $JBOSS_HOME/server/default/log/
+	Server Temp: $JBOSS_HOME/server/default/tmp/
+
+09:17:17,032 INFO  [AbstractServer] Starting: JBossAS [6.1.0.Final "Neo"]
+09:17:18,871 INFO  [ServerInfo] Java version: 1.6.0_29,Sun Microsystems Inc.
+09:17:18,871 INFO  [ServerInfo] Java Runtime: Java(TM) SE Runtime Environment (build 1.6.0_29-b11)
+09:17:18,871 INFO  [ServerInfo] Java VM: Java HotSpot(TM) 64-Bit Server VM 20.4-b02,Sun Microsystems Inc.
+09:17:18,871 INFO  [ServerInfo] OS-System: Linux 3.2.0-30-generic,amd64
+09:17:18,872 INFO  [ServerInfo] VM arguments: -Xmx2048m -Xms2048m -XX:MaxPermSize=512m -Dorg.jboss.logging.Log4jService.catchSystemOut=false -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=5000,suspend=n,server=y -Djava.net.preferIPv4Stack=true -Dprogram.name=run.sh -Dlogging.configuration=file:./logging.properties -Djava.library.path=/home/mmoquillon/Applications/jboss/bin/native/lib64 -Djava.endorsed.dirs=/home/mmoquillon/Applications/jboss/lib/endorsed 
+09:17:18,872 DEBUG [ServerInfo] Full System Properties Dump
+09:17:18,873 DEBUG [ServerInfo]     bind.address: mmoquillon-laptop
+09:17:18,874 DEBUG [ServerInfo]     file.encoding: UTF-8
+09:17:18,874 DEBUG [ServerInfo]     file.encoding.pkg: sun.io
+09:17:18,874 DEBUG [ServerInfo]     file.separator: /
+09:17:18,874 DEBUG [ServerInfo]     java.awt.graphicsenv: sun.awt.X11GraphicsEnvironment
+09:17:18,874 DEBUG [ServerInfo]     java.awt.printerjob: sun.print.PSPrinterJob
+09:17:18,874 DEBUG [ServerInfo]     java.class.path: /home/mmoquillon/Applications/jboss/bin/run.jar:/usr/lib/jvm/java-6-sun/lib/tools.jar
+09:17:18,875 DEBUG [ServerInfo]     java.class.version: 50.0
+09:17:18,875 DEBUG [ServerInfo]     java.endorsed.dirs: /home/mmoquillon/Applications/jboss/lib/endorsed
+09:17:18,875 DEBUG [ServerInfo]     java.ext.dirs: /usr/lib/jvm/jdk1.6.0_29/jre/lib/ext:/usr/java/packages/lib/ext
+09:17:18,875 DEBUG [ServerInfo]     java.home: /usr/lib/jvm/jdk1.6.0_29/jre
+09:17:18,875 DEBUG [ServerInfo]     java.io.tmpdir: /tmp
+09:17:18,875 DEBUG [ServerInfo]     java.library.path: /home/mmoquillon/Applications/jboss/bin/native/lib64
+09:17:18,875 DEBUG [ServerInfo]     java.net.preferIPv4Stack: true
+09:17:18,876 DEBUG [ServerInfo]     java.protocol.handler.pkgs: org.jboss.net.protocol|org.jboss.vfs.protocol
+09:17:18,876 DEBUG [ServerInfo]     java.rmi.server.RMIClassLoaderSpi: org.jboss.system.JBossRMIClassLoader
+09:17:18,876 DEBUG [ServerInfo]     java.rmi.server.hostname: mmoquillon-laptop
+09:17:18,876 DEBUG [ServerInfo]     java.runtime.name: Java(TM) SE Runtime Environment
+09:17:18,876 DEBUG [ServerInfo]     java.runtime.version: 1.6.0_29-b11
+09:17:18,876 DEBUG [ServerInfo]     java.specification.name: Java Platform API Specification
+09:17:18,876 DEBUG [ServerInfo]     java.specification.vendor: Sun Microsystems Inc.
+09:17:18,876 DEBUG [ServerInfo]     java.specification.version: 1.6
+09:17:18,877 DEBUG [ServerInfo]     java.util.logging.manager: org.jboss.logmanager.LogManager
+09:17:18,877 DEBUG [ServerInfo]     java.vendor: Sun Microsystems Inc.
+09:17:18,877 DEBUG [ServerInfo]     java.vendor.url: http://java.sun.com/
+09:17:18,877 DEBUG [ServerInfo]     java.vendor.url.bug: http://java.sun.com/cgi-bin/bugreport.cgi
+09:17:18,877 DEBUG [ServerInfo]     java.version: 1.6.0_29
+09:17:18,877 DEBUG [ServerInfo]     java.vm.info: mixed mode
+09:17:18,877 DEBUG [ServerInfo]     java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+09:17:18,877 DEBUG [ServerInfo]     java.vm.specification.name: Java Virtual Machine Specification
+09:17:18,878 DEBUG [ServerInfo]     java.vm.specification.vendor: Sun Microsystems Inc.
+09:17:18,878 DEBUG [ServerInfo]     java.vm.specification.version: 1.0
+09:17:18,878 DEBUG [ServerInfo]     java.vm.vendor: Sun Microsystems Inc.
+09:17:18,878 DEBUG [ServerInfo]     java.vm.version: 20.4-b02
+09:17:18,878 DEBUG [ServerInfo]     javax.management.builder.initial: org.jboss.mx.server.MBeanServerBuilderImpl
+09:17:18,878 DEBUG [ServerInfo]     jboss.bind.address: 0.0.0.0
+09:17:18,878 DEBUG [ServerInfo]     jboss.boot.server.log.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/log
+09:17:18,879 DEBUG [ServerInfo]     jboss.bootstrap.home.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/conf/
+09:17:18,879 DEBUG [ServerInfo]     jboss.bootstrap.name: bootstrap.xml
+09:17:18,879 DEBUG [ServerInfo]     jboss.bootstrap.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/conf/bootstrap.xml
+09:17:18,879 DEBUG [ServerInfo]     jboss.common.base.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/common/
+09:17:18,879 DEBUG [ServerInfo]     jboss.common.lib.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/common/lib/
+09:17:18,879 DEBUG [ServerInfo]     jboss.home: /home/mmoquillon/Applications/jboss-6.1.0.Final
+09:17:18,879 DEBUG [ServerInfo]     jboss.home.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final
+09:17:18,880 DEBUG [ServerInfo]     jboss.home.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/
+09:17:18,880 DEBUG [ServerInfo]     jboss.host.name: mmoquillon-laptop
+09:17:18,880 DEBUG [ServerInfo]     jboss.lib.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/lib/
+09:17:18,880 DEBUG [ServerInfo]     jboss.native.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/tmp/native
+09:17:18,880 DEBUG [ServerInfo]     jboss.native.load: false
+09:17:18,880 DEBUG [ServerInfo]     jboss.node.name: mmoquillon-laptop
+09:17:18,880 DEBUG [ServerInfo]     jboss.partition.name: DefaultPartition
+09:17:18,880 DEBUG [ServerInfo]     jboss.platform.mbeanserver: true
+09:17:18,881 DEBUG [ServerInfo]     jboss.qualified.host.name: mmoquillon-laptop
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.base.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.base.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.config.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/conf/
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.data.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/data
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.home.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.home.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/
+09:17:18,881 DEBUG [ServerInfo]     jboss.server.lib.url: file:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/lib/
+09:17:18,882 DEBUG [ServerInfo]     jboss.server.log.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/log
+09:17:18,882 DEBUG [ServerInfo]     jboss.server.name: default
+09:17:18,882 DEBUG [ServerInfo]     jboss.server.temp.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/tmp
+09:17:18,882 DEBUG [ServerInfo]     jboss.vfs.forceCopy: true
+09:17:18,882 DEBUG [ServerInfo]     jbossmx.loader.repository.class: org.jboss.mx.loading.UnifiedLoaderRepository3
+09:17:18,882 DEBUG [ServerInfo]     jgroups.bind_addr: mmoquillon-laptop
+09:17:18,883 DEBUG [ServerInfo]     line.separator: 
+
+09:17:18,883 DEBUG [ServerInfo]     log4j.defaultInitOverride: true
+09:17:18,883 DEBUG [ServerInfo]     logging.configuration: file:./logging.properties
+09:17:18,883 DEBUG [ServerInfo]     org.jboss.deployers.spi.deployer.matchers.NameIgnoreMechanism: org.jboss.deployers.spi.deployer.helpers.DummyNameIgnoreMechanism
+09:17:18,883 DEBUG [ServerInfo]     org.jboss.logging.Log4jService.catchSystemOut: false
+09:17:18,883 DEBUG [ServerInfo]     org.jboss.logging.Logger.pluginClass: org.jboss.logging.logmanager.LoggerPluginImpl
+09:17:18,883 DEBUG [ServerInfo]     org.jboss.reflect.spi.TypeInfoFactory: org.jboss.reflect.plugins.introspection.IntrospectionTypeInfoFactory
+09:17:18,883 DEBUG [ServerInfo]     os.arch: amd64
+09:17:18,884 DEBUG [ServerInfo]     os.name: Linux
+09:17:18,884 DEBUG [ServerInfo]     os.version: 3.2.0-30-generic
+09:17:18,884 DEBUG [ServerInfo]     path.separator: :
+09:17:18,884 DEBUG [ServerInfo]     program.name: run.sh
+09:17:18,884 DEBUG [ServerInfo]     sun.arch.data.model: 64
+09:17:18,884 DEBUG [ServerInfo]     sun.boot.class.path: /home/mmoquillon/Applications/jboss/lib/endorsed/jboss-annotations-api_1.1_spec.jar:/home/mmoquillon/Applications/jboss/lib/endorsed/activation.jar:/home/mmoquillon/Applications/jboss/lib/endorsed/jboss-jaxb-api_2.2_spec.jar:/home/mmoquillon/Applications/jboss/lib/endorsed/jbossws-cxf-factories.jar:/home/mmoquillon/Applications/jboss/lib/endorsed/jboss-jaxws-api_2.2_spec.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/resources.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/rt.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/jce.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.6.0_29/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/jdk1.6.0_29/jre/classes
+09:17:18,884 DEBUG [ServerInfo]     sun.boot.library.path: /usr/lib/jvm/jdk1.6.0_29/jre/lib/amd64
+09:17:18,885 DEBUG [ServerInfo]     sun.cpu.endian: little
+09:17:18,885 DEBUG [ServerInfo]     sun.cpu.isalist: 
+09:17:18,885 DEBUG [ServerInfo]     sun.io.unicode.encoding: UnicodeLittle
+09:17:18,885 DEBUG [ServerInfo]     sun.java.command: org.jboss.Main -b 0.0.0.0 -c default
+09:17:18,885 DEBUG [ServerInfo]     sun.java.launcher: SUN_STANDARD
+09:17:18,885 DEBUG [ServerInfo]     sun.jnu.encoding: UTF-8
+09:17:18,885 DEBUG [ServerInfo]     sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+09:17:18,885 DEBUG [ServerInfo]     sun.os.patch.level: unknown
+09:17:18,886 DEBUG [ServerInfo]     sun.rmi.dgc.client.gcInterval: 3600000
+09:17:18,886 DEBUG [ServerInfo]     sun.rmi.dgc.server.gcInterval: 3600000
+09:17:18,886 DEBUG [ServerInfo]     user.country: FR
+09:17:18,886 DEBUG [ServerInfo]     user.dir: /home/mmoquillon/Applications/jboss-6.1.0.Final/bin
+09:17:18,886 DEBUG [ServerInfo]     user.home: /home/mmoquillon
+09:17:18,887 DEBUG [ServerInfo]     user.language: fr
+09:17:18,887 DEBUG [ServerInfo]     user.name: mmoquillon
+09:17:18,887 DEBUG [ServerInfo]     user.timezone: Europe/Paris
+09:17:18,887 DEBUG [ServerInfo]     xb.builder.repeatableParticleHandlers: false
+09:17:18,887 DEBUG [ServerInfo]     xb.builder.useUnorderedSequence: true
+09:17:18,915 INFO  [JMXKernel] Legacy JMX core initialized
+09:17:24,612 INFO  [AbstractServerConfig] JBoss Web Services - Stack CXF Server 3.4.1.GA
+09:17:25,363 INFO  [JSFImplManagementDeployer] Initialized 3 JSF configurations: [Mojarra-1.2, MyFaces-2.0, Mojarra-2.0]
+09:19:25,459 INFO  [PersistenceUnitValueMetaData] iDependOn persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+09:19:27,869 INFO  [JMXConnector] starting JMXConnector on host 0.0.0.0:1090
+09:19:28,013 INFO  [MailService] Mail Service bound to java:/Mail
+09:19:29,013 INFO  [HornetQServerImpl] live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/data/hornetq/journal,bindingsDirectory=/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/data/hornetq/bindings,largeMessagesDirectory=/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/data/hornetq/largemessages,pagingDirectory=/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/data/hornetq/paging)
+09:19:29,017 INFO  [HornetQServerImpl] Waiting to obtain live lock
+09:19:29,133 INFO  [JournalStorageManager] Using AIO Journal
+09:19:29,167 ATTENTION [HornetQServerImpl] Security risk! It has been detected that the cluster admin user and password have not been changed from the installation default. Please see the HornetQ user guide, cluster chapter, for instructions on how to do this.
+09:19:29,309 INFO  [AIOFileLockNodeManager] Waiting to obtain live lock
+09:19:29,309 INFO  [AIOFileLockNodeManager] Live Server Obtained live lock
+09:19:30,149 WARN  [JournalStorageManager] Message for queue 6461 which does not exist. This message will be ignored.
+09:19:30,156 WARN  [JournalStorageManager] Message for queue 8113 which does not exist. This message will be ignored.
+09:19:30,423 INFO  [NettyAcceptor] Started Netty Acceptor version 3.2.3.Final-r${buildNumber} 0.0.0.0:5455 for CORE protocol
+09:19:30,425 INFO  [NettyAcceptor] Started Netty Acceptor version 3.2.3.Final-r${buildNumber} 0.0.0.0:5445 for CORE protocol
+09:19:30,432 INFO  [HornetQServerImpl] Server is now live
+09:19:30,433 INFO  [HornetQServerImpl] HornetQ Server version 2.2.5.Final (HQ_2_2_5_FINAL_AS7, 121) [02a24927-aee1-11e1-8c14-00269ebff5eb] started
+09:19:30,499 INFO  [WebService] Using RMI server codebase: http://mmoquillon-laptop:8083/
+09:19:30,760 INFO  [jbossatx] ARJUNA-32010 JBossTS Recovery Service (tag: JBOSSTS_4_14_0_Final) - JBoss Inc.
+09:19:30,768 INFO  [arjuna] ARJUNA-12324 Start RecoveryActivators
+09:19:30,793 INFO  [arjuna] ARJUNA-12296 ExpiredEntryMonitor running at lun., 10 sept. 2012 09:19:30
+09:19:30,884 INFO  [arjuna] ARJUNA-12310 Recovery manager listening on endpoint 0.0.0.0:4712
+09:19:30,885 INFO  [arjuna] ARJUNA-12344 RecoveryManagerImple is ready on port 4712
+09:19:30,886 INFO  [jbossatx] ARJUNA-32013 Starting transaction recovery manager
+09:19:30,914 INFO  [arjuna] ARJUNA-12163 Starting service com.arjuna.ats.arjuna.recovery.ActionStatusService on port 4713
+09:19:30,917 INFO  [arjuna] ARJUNA-12337 TransactionStatusManagerItem host: 0.0.0.0 port: 4713
+09:19:30,920 INFO  [arjuna] ARJUNA-12170 TransactionStatusManager started on port 4713 and host 0.0.0.0 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
+09:19:30,964 INFO  [jbossatx] ARJUNA-32017 JBossTS Transaction Service (JTA version - tag: JBOSSTS_4_14_0_Final) - JBoss Inc.
+09:19:31,000 INFO  [arjuna] ARJUNA-12202 registering bean jboss.jta:type=ObjectStore.
+09:19:31,288 INFO  [AprLifecycleListener] The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/mmoquillon/Applications/jboss/bin/native/lib64
+09:19:31,480 INFO  [ModClusterService] Initializing mod_cluster 1.1.0.Final
+09:19:31,497 INFO  [TomcatDeployment] deploy, ctxPath=/invoker
+09:19:31,965 INFO  [RARDeployment] Required license terms exist, view vfs:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/jboss-local-jdbc.rar/META-INF/ra.xml
+09:19:31,979 INFO  [RARDeployment] Required license terms exist, view vfs:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/jboss-xa-jdbc.rar/META-INF/ra.xml
+09:19:31,987 INFO  [RARDeployment] Required license terms exist, view vfs:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/jms-ra.rar/META-INF/ra.xml
+09:19:32,007 INFO  [HornetQResourceAdapter] HornetQ resource adaptor started
+09:19:32,016 INFO  [RARDeployment] Required license terms exist, view vfs:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/mail-ra.rar/META-INF/ra.xml
+09:19:32,031 INFO  [RARDeployment] Required license terms exist, view vfs:/home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/quartz-ra.rar/META-INF/ra.xml
+09:19:32,117 INFO  [SimpleThreadPool] Job execution threads will use class loader of thread: Thread-2
+09:19:32,478 INFO  [SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:19:32,479 INFO  [QuartzScheduler] Quartz Scheduler v.1.8.3 created.
+09:19:32,481 INFO  [RAMJobStore] RAMJobStore initialized.
+09:19:32,483 INFO  [QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v1.8.3) 'JBossQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:19:32,483 INFO  [StdSchedulerFactory] Quartz scheduler 'JBossQuartzScheduler' initialized from an externally opened InputStream.
+09:19:32,484 INFO  [StdSchedulerFactory] Quartz scheduler version: 1.8.3
+09:19:32,484 INFO  [QuartzScheduler] Scheduler JBossQuartzScheduler_$_NON_CLUSTERED started.
+09:19:33,030 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' to JNDI name 'java:DefaultDS'
+09:19:33,030 INFO  [PersistenceUnitDeployment] Starting persistence unit persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+09:19:33,298 INFO  [Version] Hibernate Commons Annotations 3.2.0.Final
+09:19:33,311 INFO  [Environment] Hibernate 3.6.6.Final
+09:19:33,314 INFO  [Environment] hibernate.properties not found
+09:19:33,320 INFO  [Environment] Bytecode provider name : javassist
+09:19:33,327 INFO  [Environment] using JDK 1.4 java.sql.Timestamp handling
+09:19:33,446 INFO  [Version] Hibernate EntityManager 3.6.6.Final
+09:19:33,484 INFO  [Ejb3Configuration] Processing PersistenceUnitInfo [
+	name: timerdb
+	...]
+09:19:33,505 WARN  [Ejb3Configuration] Persistence provider caller does not implement the EJB3 spec correctly.PersistenceUnitInfo.getNewTempClassLoader() is null.
+09:19:33,590 INFO  [AnnotationBinder] Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity
+09:19:33,669 INFO  [EntityBinder] Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity on table timer
+09:19:33,763 INFO  [AnnotationBinder] Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod
+09:19:33,768 INFO  [EntityBinder] Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod on table timeout_method
+09:19:33,816 INFO  [AnnotationBinder] Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity
+09:19:33,818 INFO  [EntityBinder] Bind entity org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity on table calendar_timer
+09:19:33,881 INFO  [Version] Hibernate Validator 3.1.0.GA
+09:19:33,946 INFO  [Version] Hibernate Validator 4.1.0.Final
+09:19:33,980 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:34,152 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:34,159 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:34,168 INFO  [HibernateSearchEventListenerRegister] Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+09:19:34,181 INFO  [ConnectionProviderFactory] Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+09:19:34,188 INFO  [InjectedDataSourceConnectionProvider] Using provided datasource
+09:19:34,382 INFO  [Dialect] Using dialect: org.hibernate.dialect.HSQLDialect
+09:19:34,405 INFO  [JdbcSupportLoader] Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+09:19:34,406 INFO  [SettingsFactory] Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+09:19:34,406 INFO  [SettingsFactory] Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+09:19:34,410 INFO  [TransactionFactoryFactory] Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+09:19:34,412 INFO  [TransactionManagerLookupFactory] instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+09:19:34,414 INFO  [TransactionManagerLookupFactory] instantiated TransactionManagerLookup
+09:19:34,415 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+09:19:34,415 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+09:19:34,415 INFO  [SettingsFactory] JDBC batch size: 15
+09:19:34,415 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+09:19:34,417 INFO  [SettingsFactory] Scrollable result sets: enabled
+09:19:34,417 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): disabled
+09:19:34,417 INFO  [SettingsFactory] Connection release mode: auto
+09:19:34,418 INFO  [SettingsFactory] Default batch fetch size: 1
+09:19:34,418 INFO  [SettingsFactory] Generate SQL with comments: disabled
+09:19:34,419 INFO  [SettingsFactory] Order SQL updates by primary key: disabled
+09:19:34,419 INFO  [SettingsFactory] Order SQL inserts for batching: disabled
+09:19:34,419 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+09:19:34,424 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+09:19:34,424 INFO  [SettingsFactory] Query language substitutions: {}
+09:19:34,424 INFO  [SettingsFactory] JPA-QL strict compliance: enabled
+09:19:34,425 INFO  [SettingsFactory] Second-level cache: enabled
+09:19:34,425 INFO  [SettingsFactory] Query cache: disabled
+09:19:34,426 INFO  [SettingsFactory] Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+09:19:34,432 INFO  [RegionFactoryCacheProviderBridge] Cache provider: org.hibernate.cache.HashtableCacheProvider
+09:19:34,433 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+09:19:34,433 INFO  [SettingsFactory] Cache region prefix: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+09:19:34,433 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+09:19:34,442 INFO  [SettingsFactory] Statistics: disabled
+09:19:34,443 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+09:19:34,443 INFO  [SettingsFactory] Default entity-mode: pojo
+09:19:34,443 INFO  [SettingsFactory] Named query checking : enabled
+09:19:34,443 INFO  [SettingsFactory] Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+09:19:34,479 INFO  [SessionFactoryImpl] building session factory
+09:19:34,492 INFO  [BasicTypeRegistry] Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@447c853b
+09:19:34,492 INFO  [BasicTypeRegistry] Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@4b0f079d
+09:19:34,492 INFO  [BasicTypeRegistry] Type registration [blob] overrides previous : org.hibernate.type.BlobType@47bcfaea
+09:19:34,492 INFO  [BasicTypeRegistry] Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@47bcfaea
+09:19:34,493 INFO  [BasicTypeRegistry] Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@47fd3d71
+09:19:34,493 INFO  [BasicTypeRegistry] Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@42cceaa3
+09:19:34,493 INFO  [BasicTypeRegistry] Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@1b409598
+09:19:34,493 INFO  [BasicTypeRegistry] Type registration [clob] overrides previous : org.hibernate.type.ClobType@2d1d3c22
+09:19:34,493 INFO  [BasicTypeRegistry] Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@2d1d3c22
+09:19:34,796 INFO  [SessionFactoryObjectFactory] Factory name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+09:19:34,798 INFO  [NamingHelper] JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+09:19:34,802 INFO  [SessionFactoryObjectFactory] Bound factory to JNDI name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+09:19:34,812 INFO  [SchemaUpdate] Running hbm2ddl schema update
+09:19:34,812 INFO  [SchemaUpdate] fetching database metadata
+09:19:34,832 INFO  [SchemaUpdate] updating schema
+09:19:34,835 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:34,882 INFO  [TableMetadata] table found: PUBLIC.TIMEOUTMETHOD_METHODPARAMS
+09:19:34,883 INFO  [TableMetadata] columns: [methodparams, timeoutmethod_id]
+09:19:34,883 INFO  [TableMetadata] foreign keys: [fkf294c964b7de2d8a]
+09:19:34,883 INFO  [TableMetadata] indexes: [sys_idx_55]
+09:19:34,917 INFO  [TableMetadata] table found: PUBLIC.CALENDAR_TIMER
+09:19:34,917 INFO  [TableMetadata] columns: [scheduleexprtimezone, scheduleexprsecond, autotimer, scheduleexprstartdate, scheduleexprminute, scheduleexprhour, timeoutmethod_id, id, scheduleexprdayofmonth, scheduleexprenddate, scheduleexprmonth, scheduleexprdayofweek, scheduleexpryear]
+09:19:34,917 INFO  [TableMetadata] foreign keys: [fk2b697f04b7de2d8a, fk2b697f04e6e6ef93]
+09:19:34,917 INFO  [TableMetadata] indexes: [sys_idx_57, sys_idx_48, sys_idx_59]
+09:19:34,934 INFO  [TableMetadata] table found: PUBLIC.TIMEOUT_METHOD
+09:19:34,935 INFO  [TableMetadata] columns: [id, methodname, declaringclass]
+09:19:34,935 INFO  [TableMetadata] foreign keys: []
+09:19:34,935 INFO  [TableMetadata] indexes: [sys_idx_50]
+09:19:34,955 INFO  [TableMetadata] table found: PUBLIC.TIMER
+09:19:34,955 INFO  [TableMetadata] columns: [id, previousrun, initialdate, repeatinterval, timedobjectid, timerstate, nextdate, info]
+09:19:34,956 INFO  [TableMetadata] foreign keys: []
+09:19:34,956 INFO  [TableMetadata] indexes: [sys_idx_52]
+09:19:34,958 INFO  [SchemaUpdate] schema update complete
+09:19:34,965 INFO  [NamingHelper] JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+09:19:35,205 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=/datasources/DocumentStoreDS' to JNDI name 'java:/datasources/DocumentStoreDS'
+09:19:35,357 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' to JNDI name 'java:JmsXA'
+09:19:35,396 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=/datasources/silverpeas-jdbc' to JNDI name 'java:/datasources/silverpeas-jdbc'
+09:19:35,451 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=/datasources/silverpeas' to JNDI name 'java:/datasources/silverpeas'
+09:19:35,586 INFO  [xnio] XNIO Version 2.1.0.CR2
+09:19:35,598 INFO  [nio] XNIO NIO Implementation Version 2.1.0.CR2
+09:19:35,766 INFO  [remoting] JBoss Remoting version 3.1.0.Beta2
+09:19:35,865 INFO  [TomcatDeployment] deploy, ctxPath=/
+09:19:35,958 INFO  [EjbDeployer] installing bean: ejb/admin-5.11-SNAPSHOT.jar#AdminBm,uid1971182017
+09:19:35,959 INFO  [EjbDeployer]   with dependencies:
+09:19:35,961 INFO  [EjbDeployer]   and supplies:
+09:19:35,961 INFO  [EjbDeployer] 	jndi:silverpeas/AdminBm/com.silverpeas.admin.ejb.AdminBm
+09:19:35,961 INFO  [EjbDeployer] 	jndi:ejb/AdminBm
+09:19:35,979 INFO  [EjbDeployer] installing bean: ejb/almanach-ejb-5.11-SNAPSHOT.jar#AlmanachBm,uid129580160
+09:19:35,980 INFO  [EjbDeployer]   with dependencies:
+09:19:35,980 INFO  [EjbDeployer]   and supplies:
+09:19:35,980 INFO  [EjbDeployer] 	jndi:silverpeas/AlmanachBm/com.stratelia.webactiv.almanach.control.ejb.AlmanachBm
+09:19:35,980 INFO  [EjbDeployer] 	jndi:ejb/AlmanachBm
+09:19:35,985 INFO  [EjbDeployer] installing bean: ejb/authentication-5.11-SNAPSHOT.jar#AuthenticationBm,uid305331062
+09:19:35,985 INFO  [EjbDeployer]   with dependencies:
+09:19:35,986 INFO  [EjbDeployer]   and supplies:
+09:19:35,986 INFO  [EjbDeployer] 	jndi:ejb/AuthenticationBm
+09:19:35,986 INFO  [EjbDeployer] 	jndi:silverpeas/AuthenticationBm/com.silverpeas.authentication.ejb.AuthenticationBm
+09:19:36,042 INFO  [EjbDeployer] installing bean: ejb/calendar-5.11-SNAPSHOT.jar#CalendarBm,uid1360726351
+09:19:36,042 INFO  [EjbDeployer]   with dependencies:
+09:19:36,042 INFO  [EjbDeployer]   and supplies:
+09:19:36,042 INFO  [EjbDeployer] 	jndi:silverpeas/CalendarBm/com.stratelia.webactiv.calendar.control.CalendarBm
+09:19:36,042 INFO  [EjbDeployer] 	jndi:ejb/CalendarBm
+09:19:36,048 INFO  [EjbDeployer] installing bean: ejb/clipboard-5.11-SNAPSHOT.jar#ClipboardBm,uid1174424354
+09:19:36,049 INFO  [EjbDeployer]   with dependencies:
+09:19:36,049 INFO  [EjbDeployer]   and supplies:
+09:19:36,049 INFO  [EjbDeployer] 	jndi:ejb/ClipboardBm
+09:19:36,049 INFO  [EjbDeployer] 	jndi:silverpeas/ClipboardBm/com.stratelia.webactiv.clipboard.control.ejb.ClipboardBm
+09:19:36,066 INFO  [EjbDeployer] installing bean: ejb/contact-5.11-SNAPSHOT.jar#Contact,uid1861067039
+09:19:36,066 INFO  [EjbDeployer]   with dependencies:
+09:19:36,066 INFO  [EjbDeployer]   and supplies:
+09:19:36,067 INFO  [EjbDeployer] 	jndi:ejb/Contact
+09:19:36,067 INFO  [EjbDeployer] installing bean: ejb/contact-5.11-SNAPSHOT.jar#ContactBm,uid854405918
+09:19:36,067 INFO  [EjbDeployer]   with dependencies:
+09:19:36,068 INFO  [EjbDeployer]   and supplies:
+09:19:36,068 INFO  [EjbDeployer] 	jndi:silverpeas/ContactBm/com.stratelia.webactiv.util.contact.control.ContactBm
+09:19:36,068 INFO  [EjbDeployer] 	jndi:ejb/ContactBm
+09:19:36,075 INFO  [EjbDeployer] installing bean: ejb/favorit-5.11-SNAPSHOT.jar#FavoritBm,uid1924599984
+09:19:36,075 INFO  [EjbDeployer]   with dependencies:
+09:19:36,076 INFO  [EjbDeployer]   and supplies:
+09:19:36,076 INFO  [EjbDeployer] 	jndi:ejb/FavoritBm
+09:19:36,076 INFO  [EjbDeployer] 	jndi:silverpeas/FavoritBm/com.stratelia.webactiv.util.favorit.control.FavoritBm
+09:19:36,086 INFO  [EjbDeployer] installing bean: ejb/formtemplate-5.11-SNAPSHOT.jar#FormTemplateBm,uid1353239974
+09:19:36,087 INFO  [EjbDeployer]   with dependencies:
+09:19:36,087 INFO  [EjbDeployer]   and supplies:
+09:19:36,087 INFO  [EjbDeployer] 	jndi:ejb/FormTemplateBm
+09:19:36,087 INFO  [EjbDeployer] 	jndi:silverpeas/FormTemplateBm/com.silverpeas.formTemplate.ejb.FormTemplateBm
+09:19:36,125 INFO  [EjbDeployer] installing bean: ejb/forums-ejb-5.11-SNAPSHOT.jar#ForumsBM,uid2052421288
+09:19:36,125 INFO  [EjbDeployer]   with dependencies:
+09:19:36,125 INFO  [EjbDeployer]   and supplies:
+09:19:36,125 INFO  [EjbDeployer] 	jndi:silverpeas/ForumsBM/com.stratelia.webactiv.forums.forumsManager.ejb.ForumsBM
+09:19:36,126 INFO  [EjbDeployer] 	jndi:ejb/ForumsBM
+09:19:36,151 INFO  [EjbDeployer] installing bean: ejb/gallery-ejb-5.11-SNAPSHOT.jar#GalleryBm,uid14765655
+09:19:36,151 INFO  [EjbDeployer]   with dependencies:
+09:19:36,152 INFO  [EjbDeployer]   and supplies:
+09:19:36,152 INFO  [EjbDeployer] 	jndi:silverpeas/GalleryBm/com.silverpeas.gallery.control.ejb.GalleryBm
+09:19:36,152 INFO  [EjbDeployer] 	jndi:ejb/GalleryBm
+09:19:36,236 INFO  [EjbDeployer] installing bean: ejb/kmelia-ejb-5.11-SNAPSHOT.jar#KmeliaBm,uid1205744180
+09:19:36,236 INFO  [EjbDeployer]   with dependencies:
+09:19:36,236 INFO  [EjbDeployer]   and supplies:
+09:19:36,236 INFO  [EjbDeployer] 	jndi:ejb/KmeliaBm
+09:19:36,236 INFO  [EjbDeployer] 	jndi:silverpeas/KmeliaBm/com.stratelia.webactiv.kmelia.control.ejb.KmeliaBm
+09:19:36,239 INFO  [EjbDeployer] installing bean: ejb/mydb-ejb-5.11-SNAPSHOT.jar#MyDBBm,uid1286740168
+09:19:36,239 INFO  [EjbDeployer]   with dependencies:
+09:19:36,240 INFO  [EjbDeployer]   and supplies:
+09:19:36,240 INFO  [EjbDeployer] 	jndi:silverpeas/MyDBBm/com.silverpeas.mydb.control.ejb.MyDBBm
+09:19:36,240 INFO  [EjbDeployer] 	jndi:ejb/MyDBBm
+09:19:36,245 INFO  [EjbDeployer] installing bean: ejb/mylinks-5.11-SNAPSHOT.jar#MyLinks,uid1081678286
+09:19:36,246 INFO  [EjbDeployer]   with dependencies:
+09:19:36,246 INFO  [EjbDeployer]   and supplies:
+09:19:36,246 INFO  [EjbDeployer] 	jndi:silverpeas/MyLinks/com.silverpeas.myLinks.ejb.MyLinksBm
+09:19:36,246 INFO  [EjbDeployer] 	jndi:ejb/MyLinks
+09:19:36,255 INFO  [EjbDeployer] installing bean: ejb/node-5.11-SNAPSHOT.jar#Node,uid1317880947
+09:19:36,255 INFO  [EjbDeployer]   with dependencies:
+09:19:36,255 INFO  [EjbDeployer]   and supplies:
+09:19:36,255 INFO  [EjbDeployer] 	jndi:ejb/Node
+09:19:36,255 INFO  [EjbDeployer] installing bean: ejb/node-5.11-SNAPSHOT.jar#CoordinatesBm,uid478741071
+09:19:36,256 INFO  [EjbDeployer]   with dependencies:
+09:19:36,256 INFO  [EjbDeployer]   and supplies:
+09:19:36,256 INFO  [EjbDeployer] 	jndi:silverpeas/CoordinatesBm/com.stratelia.webactiv.util.coordinates.control.CoordinatesBm
+09:19:36,256 INFO  [EjbDeployer] 	jndi:ejb/CoordinatesBm
+09:19:36,256 INFO  [EjbDeployer] installing bean: ejb/node-5.11-SNAPSHOT.jar#NodeBm,uid1727438635
+09:19:36,257 INFO  [EjbDeployer]   with dependencies:
+09:19:36,257 INFO  [EjbDeployer]   and supplies:
+09:19:36,257 INFO  [EjbDeployer] 	jndi:ejb/NodeBm
+09:19:36,257 INFO  [EjbDeployer] 	jndi:silverpeas/NodeBm/com.stratelia.webactiv.util.node.control.NodeBm
+09:19:36,259 INFO  [EjbDeployer] installing bean: ejb/notation-5.11-SNAPSHOT.jar#NotationBm,uid1229714652
+09:19:36,259 INFO  [EjbDeployer]   with dependencies:
+09:19:36,260 INFO  [EjbDeployer]   and supplies:
+09:19:36,260 INFO  [EjbDeployer] 	jndi:ejb/NotationBm
+09:19:36,260 INFO  [EjbDeployer] 	jndi:silverpeas/NotationBm/com.silverpeas.notation.ejb.NotationBm
+09:19:36,275 INFO  [EjbDeployer] installing bean: ejb/pdc-5.11-SNAPSHOT.jar#ThesaurusBm,uid790270827
+09:19:36,275 INFO  [EjbDeployer]   with dependencies:
+09:19:36,275 INFO  [EjbDeployer]   and supplies:
+09:19:36,275 INFO  [EjbDeployer] 	jndi:silverpeas/ThesaurusBm/com.silverpeas.thesaurus.ejb.ThesaurusBm
+09:19:36,275 INFO  [EjbDeployer] 	jndi:ejb/ThesaurusBm
+09:19:36,275 INFO  [EjbDeployer] installing bean: ejb/pdc-5.11-SNAPSHOT.jar#PdcBm,uid2042916341
+09:19:36,276 INFO  [EjbDeployer]   with dependencies:
+09:19:36,276 INFO  [EjbDeployer]   and supplies:
+09:19:36,276 INFO  [EjbDeployer] 	jndi:ejb/PdcBm
+09:19:36,276 INFO  [EjbDeployer] 	jndi:silverpeas/PdcBm/com.silverpeas.pdc.ejb.PdcBm
+09:19:36,276 INFO  [EjbDeployer] installing bean: ejb/pdc-5.11-SNAPSHOT.jar#pdcSubscription,uid1326394951
+09:19:36,276 INFO  [EjbDeployer]   with dependencies:
+09:19:36,276 INFO  [EjbDeployer]   and supplies:
+09:19:36,277 INFO  [EjbDeployer] 	jndi:silverpeas/pdcSubscription/com.silverpeas.pdcSubscription.ejb.PdcSubscriptionBm
+09:19:36,277 INFO  [EjbDeployer] 	jndi:ejb/pdcSubscription
+09:19:36,277 INFO  [EjbDeployer] installing bean: ejb/pdc-5.11-SNAPSHOT.jar#InterestCenter,uid1839685597
+09:19:36,277 INFO  [EjbDeployer]   with dependencies:
+09:19:36,277 INFO  [EjbDeployer]   and supplies:
+09:19:36,277 INFO  [EjbDeployer] 	jndi:silverpeas/InterestCenter/com.silverpeas.interestCenter.ejb.InterestCenterBm
+09:19:36,277 INFO  [EjbDeployer] 	jndi:ejb/InterestCenter
+09:19:36,281 INFO  [EjbDeployer] installing bean: ejb/process-manager-ejb-5.11-SNAPSHOT.jar#ProcessManagerBm,uid126279273
+09:19:36,282 INFO  [EjbDeployer]   with dependencies:
+09:19:36,282 INFO  [EjbDeployer]   and supplies:
+09:19:36,282 INFO  [EjbDeployer] 	jndi:silverpeas/ProcessManagerBm/com.silverpeas.processManager.ejb.ProcessManagerBm
+09:19:36,282 INFO  [EjbDeployer] 	jndi:ejb/ProcessManagerBm
+09:19:36,289 INFO  [EjbDeployer] installing bean: ejb/project-manager-ejb-5.11-SNAPSHOT.jar#ProjectManagerBm,uid661898075
+09:19:36,289 INFO  [EjbDeployer]   with dependencies:
+09:19:36,290 INFO  [EjbDeployer]   and supplies:
+09:19:36,290 INFO  [EjbDeployer] 	jndi:silverpeas/ProjectManagerBm/com.silverpeas.projectManager.control.ejb.ProjectManagerBm
+09:19:36,290 INFO  [EjbDeployer] 	jndi:ejb/ProjectManagerBm
+09:19:36,301 INFO  [EjbDeployer] installing bean: ejb/publication-5.11-SNAPSHOT.jar#PublicationBm,uid555655065
+09:19:36,301 INFO  [EjbDeployer]   with dependencies:
+09:19:36,301 INFO  [EjbDeployer]   and supplies:
+09:19:36,302 INFO  [EjbDeployer] 	jndi:ejb/PublicationBm
+09:19:36,302 INFO  [EjbDeployer] 	jndi:silverpeas/PublicationBm/com.stratelia.webactiv.util.publication.control.PublicationBm
+09:19:36,302 INFO  [EjbDeployer] installing bean: ejb/publication-5.11-SNAPSHOT.jar#Publication,uid1635780299
+09:19:36,302 INFO  [EjbDeployer]   with dependencies:
+09:19:36,302 INFO  [EjbDeployer]   and supplies:
+09:19:36,302 INFO  [EjbDeployer] 	jndi:ejb/Publication
+09:19:36,316 INFO  [EjbDeployer] installing bean: ejb/questioncontainer-5.11-SNAPSHOT.jar#QuestionResultBm,uid473836399
+09:19:36,316 INFO  [EjbDeployer]   with dependencies:
+09:19:36,317 INFO  [EjbDeployer]   and supplies:
+09:19:36,317 INFO  [EjbDeployer] 	jndi:ejb/QuestionResultBm
+09:19:36,317 INFO  [EjbDeployer] 	jndi:silverpeas/QuestionResultBm/com.stratelia.webactiv.util.questionResult.control.QuestionResultBm
+09:19:36,317 INFO  [EjbDeployer] installing bean: ejb/questioncontainer-5.11-SNAPSHOT.jar#QuestionContainerBm,uid898994917
+09:19:36,317 INFO  [EjbDeployer]   with dependencies:
+09:19:36,318 INFO  [EjbDeployer]   and supplies:
+09:19:36,318 INFO  [EjbDeployer] 	jndi:ejb/QuestionContainerBm
+09:19:36,318 INFO  [EjbDeployer] 	jndi:silverpeas/QuestionContainerBm/com.stratelia.webactiv.util.questionContainer.control.QuestionContainerBm
+09:19:36,318 INFO  [EjbDeployer] installing bean: ejb/questioncontainer-5.11-SNAPSHOT.jar#QuestionBm,uid1860113374
+09:19:36,318 INFO  [EjbDeployer]   with dependencies:
+09:19:36,318 INFO  [EjbDeployer]   and supplies:
+09:19:36,318 INFO  [EjbDeployer] 	jndi:silverpeas/QuestionBm/com.stratelia.webactiv.util.question.control.QuestionBm
+09:19:36,319 INFO  [EjbDeployer] 	jndi:ejb/QuestionBm
+09:19:36,319 INFO  [EjbDeployer] installing bean: ejb/questioncontainer-5.11-SNAPSHOT.jar#AnswerBm,uid2006027439
+09:19:36,319 INFO  [EjbDeployer]   with dependencies:
+09:19:36,319 INFO  [EjbDeployer]   and supplies:
+09:19:36,319 INFO  [EjbDeployer] 	jndi:ejb/AnswerBm
+09:19:36,319 INFO  [EjbDeployer] 	jndi:silverpeas/AnswerBm/com.stratelia.webactiv.util.answer.control.AnswerBm
+09:19:36,320 INFO  [EjbDeployer] installing bean: ejb/questioncontainer-5.11-SNAPSHOT.jar#ScoreBm,uid1957393020
+09:19:36,320 INFO  [EjbDeployer]   with dependencies:
+09:19:36,320 INFO  [EjbDeployer]   and supplies:
+09:19:36,320 INFO  [EjbDeployer] 	jndi:ejb/ScoreBm
+09:19:36,320 INFO  [EjbDeployer] 	jndi:silverpeas/ScoreBm/com.stratelia.webactiv.util.score.control.ScoreBm
+09:19:36,324 INFO  [EjbDeployer] installing bean: ejb/statistic-5.11-SNAPSHOT.jar#StatisticBm,uid602498747
+09:19:36,324 INFO  [EjbDeployer]   with dependencies:
+09:19:36,324 INFO  [EjbDeployer]   and supplies:
+09:19:36,324 INFO  [EjbDeployer] 	jndi:ejb/StatisticBm
+09:19:36,324 INFO  [EjbDeployer] 	jndi:silverpeas/StatisticBm/com.stratelia.webactiv.util.statistic.control.StatisticBm
+09:19:36,327 INFO  [EjbDeployer] installing bean: ejb/tagcloud-5.11-SNAPSHOT.jar#TagCloudBm,uid811045224
+09:19:36,327 INFO  [EjbDeployer]   with dependencies:
+09:19:36,327 INFO  [EjbDeployer]   and supplies:
+09:19:36,328 INFO  [EjbDeployer] 	jndi:ejb/TagCloudBm
+09:19:36,328 INFO  [EjbDeployer] 	jndi:silverpeas/TagCloudBm/com.silverpeas.tagcloud.ejb.TagCloudBm
+09:19:36,331 INFO  [EjbDeployer] installing bean: ejb/versioning-5.11-SNAPSHOT.jar#Versioning,uid1158372259
+09:19:36,331 INFO  [EjbDeployer]   with dependencies:
+09:19:36,332 INFO  [EjbDeployer]   and supplies:
+09:19:36,332 INFO  [EjbDeployer] 	jndi:ejb/Versioning
+09:19:36,332 INFO  [EjbDeployer] 	jndi:silverpeas/Versioning/com.stratelia.silverpeas.versioning.ejb.VersioningBm
+09:19:36,336 INFO  [EjbDeployer] installing bean: ejb/websites-ejb-5.11-SNAPSHOT.jar#webSitesBm,uid1823296958
+09:19:36,336 INFO  [EjbDeployer]   with dependencies:
+09:19:36,336 INFO  [EjbDeployer]   and supplies:
+09:19:36,336 INFO  [EjbDeployer] 	jndi:silverpeas/webSitesBm/com.stratelia.webactiv.webSites.control.ejb.WebSiteBm
+09:19:36,336 INFO  [EjbDeployer] 	jndi:ejb/webSitesBm
+09:19:36,339 INFO  [EjbDeployer] installing bean: ejb/yellowpages-ejb-5.11-SNAPSHOT.jar#YellowpagesBm,uid1707814063
+09:19:36,339 INFO  [EjbDeployer]   with dependencies:
+09:19:36,340 INFO  [EjbDeployer]   and supplies:
+09:19:36,340 INFO  [EjbDeployer] 	jndi:silverpeas/YellowpagesBm/com.stratelia.webactiv.yellowpages.control.ejb.YellowpagesBm
+09:19:36,340 INFO  [EjbDeployer] 	jndi:ejb/YellowpagesBm
+09:19:36,383 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,409 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,414 INFO  [JBossASKernel] Created KernelDeployment for: commons-compress-1.3.jar
+09:19:36,417 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=commons-compress-1.3.jar,name=commons-compress-1.3,service=EJB3
+09:19:36,417 INFO  [JBossASKernel]   with dependencies:
+09:19:36,417 INFO  [JBossASKernel]   and demands:
+09:19:36,418 INFO  [JBossASKernel]   and supplies:
+09:19:36,418 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=commons-compress-1.3.jar,name=commons-compress-1.3,service=EJB3) to KernelDeployment of: commons-compress-1.3.jar
+09:19:36,423 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,424 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,424 INFO  [JBossASKernel] Created KernelDeployment for: freshcookies-security-0.60.jar
+09:19:36,424 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=freshcookies-security-0.60.jar,name=freshcookies-security-0.60,service=EJB3
+09:19:36,424 INFO  [JBossASKernel]   with dependencies:
+09:19:36,424 INFO  [JBossASKernel]   and demands:
+09:19:36,424 INFO  [JBossASKernel]   and supplies:
+09:19:36,425 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=freshcookies-security-0.60.jar,name=freshcookies-security-0.60,service=EJB3) to KernelDeployment of: freshcookies-security-0.60.jar
+09:19:36,433 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,434 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,434 INFO  [JBossASKernel] Created KernelDeployment for: itext-2.1.7.jar
+09:19:36,434 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=itext-2.1.7.jar,name=itext-2.1.7,service=EJB3
+09:19:36,434 INFO  [JBossASKernel]   with dependencies:
+09:19:36,435 INFO  [JBossASKernel]   and demands:
+09:19:36,435 INFO  [JBossASKernel]   and supplies:
+09:19:36,435 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=itext-2.1.7.jar,name=itext-2.1.7,service=EJB3) to KernelDeployment of: itext-2.1.7.jar
+09:19:36,440 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,440 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,440 INFO  [JBossASKernel] Created KernelDeployment for: jackrabbit-jcr-commons-2.5.1.jar
+09:19:36,440 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=jackrabbit-jcr-commons-2.5.1.jar,name=jackrabbit-jcr-commons-2.5.1,service=EJB3
+09:19:36,441 INFO  [JBossASKernel]   with dependencies:
+09:19:36,441 INFO  [JBossASKernel]   and demands:
+09:19:36,441 INFO  [JBossASKernel]   and supplies:
+09:19:36,441 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=jackrabbit-jcr-commons-2.5.1.jar,name=jackrabbit-jcr-commons-2.5.1,service=EJB3) to KernelDeployment of: jackrabbit-jcr-commons-2.5.1.jar
+09:19:36,446 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,446 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,446 INFO  [JBossASKernel] Created KernelDeployment for: metadata-extractor-2.6.2.jar
+09:19:36,446 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=metadata-extractor-2.6.2.jar,name=metadata-extractor-2.6.2,service=EJB3
+09:19:36,447 INFO  [JBossASKernel]   with dependencies:
+09:19:36,447 INFO  [JBossASKernel]   and demands:
+09:19:36,447 INFO  [JBossASKernel]   and supplies:
+09:19:36,447 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=metadata-extractor-2.6.2.jar,name=metadata-extractor-2.6.2,service=EJB3) to KernelDeployment of: metadata-extractor-2.6.2.jar
+09:19:36,452 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,452 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:36,452 INFO  [JBossASKernel] Created KernelDeployment for: tagsoup-1.2.1.jar
+09:19:36,452 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=tagsoup-1.2.1.jar,name=tagsoup-1.2.1,service=EJB3
+09:19:36,453 INFO  [JBossASKernel]   with dependencies:
+09:19:36,453 INFO  [JBossASKernel]   and demands:
+09:19:36,453 INFO  [JBossASKernel]   and supplies:
+09:19:36,453 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=tagsoup-1.2.1.jar,name=tagsoup-1.2.1,service=EJB3) to KernelDeployment of: tagsoup-1.2.1.jar
+09:19:36,636 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:37,115 WARN  [InterceptorInfoRepository] EJBTHREE-1852: InterceptorInfoRepository is deprecated
+09:19:37,204 INFO  [JBossASKernel] Created KernelDeployment for: channels-5.11-SNAPSHOT.jar
+09:19:37,205 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener,service=EJB3
+09:19:37,205 INFO  [JBossASKernel]   with dependencies:
+09:19:37,205 INFO  [JBossASKernel]   and demands:
+09:19:37,205 INFO  [JBossASKernel] 	jboss.ejb:service=EJBTimerService; Required: Described
+09:19:37,206 INFO  [JBossASKernel] 	jboss-switchboard:appName=silverpeas,module=channels-5.11-SNAPSHOT,name=com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener; Required: Create
+09:19:37,206 INFO  [JBossASKernel]   and supplies:
+09:19:37,206 INFO  [JBossASKernel] 	jndi:null
+09:19:37,206 INFO  [JBossASKernel] 	Class:javax.jms.MessageListener
+09:19:37,209 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener,service=EJB3) to KernelDeployment of: channels-5.11-SNAPSHOT.jar
+09:19:37,211 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener,service=EJB3
+09:19:37,211 INFO  [JBossASKernel]   with dependencies:
+09:19:37,211 INFO  [JBossASKernel]   and demands:
+09:19:37,211 INFO  [JBossASKernel] 	jboss.ejb:service=EJBTimerService; Required: Described
+09:19:37,211 INFO  [JBossASKernel] 	jboss-switchboard:appName=silverpeas,module=channels-5.11-SNAPSHOT,name=com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener; Required: Create
+09:19:37,212 INFO  [JBossASKernel]   and supplies:
+09:19:37,212 INFO  [JBossASKernel] 	jndi:null
+09:19:37,212 INFO  [JBossASKernel] 	Class:javax.jms.MessageListener
+09:19:37,212 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener,service=EJB3) to KernelDeployment of: channels-5.11-SNAPSHOT.jar
+09:19:37,214 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener,service=EJB3
+09:19:37,214 INFO  [JBossASKernel]   with dependencies:
+09:19:37,214 INFO  [JBossASKernel]   and demands:
+09:19:37,214 INFO  [JBossASKernel] 	jboss.ejb:service=EJBTimerService; Required: Described
+09:19:37,215 INFO  [JBossASKernel] 	jboss-switchboard:appName=silverpeas,module=channels-5.11-SNAPSHOT,name=com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener; Required: Create
+09:19:37,215 INFO  [JBossASKernel]   and supplies:
+09:19:37,215 INFO  [JBossASKernel] 	jndi:null
+09:19:37,215 INFO  [JBossASKernel] 	Class:javax.jms.MessageListener
+09:19:37,216 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener,service=EJB3) to KernelDeployment of: channels-5.11-SNAPSHOT.jar
+09:19:37,217 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener,service=EJB3
+09:19:37,217 INFO  [JBossASKernel]   with dependencies:
+09:19:37,217 INFO  [JBossASKernel]   and demands:
+09:19:37,217 INFO  [JBossASKernel] 	jboss.ejb:service=EJBTimerService; Required: Described
+09:19:37,217 INFO  [JBossASKernel] 	jboss-switchboard:appName=silverpeas,module=channels-5.11-SNAPSHOT,name=com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener; Required: Create
+09:19:37,217 INFO  [JBossASKernel]   and supplies:
+09:19:37,218 INFO  [JBossASKernel] 	jndi:null
+09:19:37,218 INFO  [JBossASKernel] 	Class:javax.jms.MessageListener
+09:19:37,218 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener,service=EJB3) to KernelDeployment of: channels-5.11-SNAPSHOT.jar
+09:19:37,219 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener,service=EJB3
+09:19:37,219 INFO  [JBossASKernel]   with dependencies:
+09:19:37,220 INFO  [JBossASKernel]   and demands:
+09:19:37,220 INFO  [JBossASKernel] 	jboss.ejb:service=EJBTimerService; Required: Described
+09:19:37,220 INFO  [JBossASKernel] 	jboss-switchboard:appName=silverpeas,module=channels-5.11-SNAPSHOT,name=com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener; Required: Create
+09:19:37,220 INFO  [JBossASKernel]   and supplies:
+09:19:37,220 INFO  [JBossASKernel] 	jndi:null
+09:19:37,220 INFO  [JBossASKernel] 	Class:javax.jms.MessageListener
+09:19:37,221 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=channels-5.11-SNAPSHOT.jar,name=com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener,service=EJB3) to KernelDeployment of: channels-5.11-SNAPSHOT.jar
+09:19:37,222 INFO  [JBossASKernel] Created KernelDeployment for: silverstatistics-5.11-SNAPSHOT.jar
+09:19:37,222 INFO  [JBossASKernel] installing bean: jboss.j2ee:ear=silverpeas.ear,jar=silverstatistics-5.11-SNAPSHOT.jar,name=SilverStatisticsMessageDriven,service=EJB3
+09:19:37,222 INFO  [JBossASKernel]   with dependencies:
+09:19:37,222 INFO  [JBossASKernel]   and demands:
+09:19:37,222 INFO  [JBossASKernel] 	jboss.ejb:service=EJBTimerService; Required: Described
+09:19:37,223 INFO  [JBossASKernel] 	jboss-switchboard:appName=silverpeas,module=silverstatistics-5.11-SNAPSHOT,name=SilverStatisticsMessageDriven; Required: Create
+09:19:37,223 INFO  [JBossASKernel]   and supplies:
+09:19:37,223 INFO  [JBossASKernel] 	jndi:null
+09:19:37,223 INFO  [JBossASKernel] 	Class:javax.jms.MessageListener
+09:19:37,223 INFO  [JBossASKernel] Added bean(jboss.j2ee:ear=silverpeas.ear,jar=silverstatistics-5.11-SNAPSHOT.jar,name=SilverStatisticsMessageDriven,service=EJB3) to KernelDeployment of: silverstatistics-5.11-SNAPSHOT.jar
+09:19:37,385 INFO  [EJBContainer] STARTED EJB: com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener ejbName: com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener
+09:19:37,456 WARN  [TimerServiceContainer] EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+09:19:38,423 INFO  [EJBContainer] STARTED EJB: com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener ejbName: com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener
+09:19:38,431 WARN  [TimerServiceContainer] EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+09:19:38,439 INFO  [EJBContainer] STARTED EJB: com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener ejbName: com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener
+09:19:38,451 WARN  [TimerServiceContainer] EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+09:19:38,462 INFO  [EJBContainer] STARTED EJB: com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener ejbName: com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener
+09:19:38,478 WARN  [TimerServiceContainer] EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+09:19:38,501 INFO  [EJBContainer] STARTED EJB: com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener ejbName: com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener
+09:19:38,511 WARN  [TimerServiceContainer] EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+09:19:38,550 INFO  [ClientENCInjectionContainer] STARTED CLIENT ENC CONTAINER: commons-compress-1.3
+09:19:38,586 INFO  [ClientENCInjectionContainer] STARTED CLIENT ENC CONTAINER: freshcookies-security-0.60
+09:19:38,597 INFO  [ClientENCInjectionContainer] STARTED CLIENT ENC CONTAINER: itext-2.1.7
+09:19:38,601 INFO  [ClientENCInjectionContainer] STARTED CLIENT ENC CONTAINER: jackrabbit-jcr-commons-2.5.1
+09:19:38,619 INFO  [ClientENCInjectionContainer] STARTED CLIENT ENC CONTAINER: metadata-extractor-2.6.2
+09:19:38,873 INFO  [EJBContainer] STARTED EJB: com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsMessageDriven ejbName: SilverStatisticsMessageDriven
+09:19:38,877 WARN  [TimerServiceContainer] EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+09:19:38,897 INFO  [ClientENCInjectionContainer] STARTED CLIENT ENC CONTAINER: tagsoup-1.2.1
+09:19:39,103 INFO  [EjbModule] Deploying AdminBm
+09:19:39,305 INFO  [ProxyFactory] Bound EJB Home 'AdminBm' to jndi 'ejb/AdminBm'
+09:19:39,322 INFO  [EjbModule] Deploying AlmanachBm
+09:19:39,364 INFO  [ProxyFactory] Bound EJB Home 'AlmanachBm' to jndi 'ejb/AlmanachBm'
+09:19:39,385 INFO  [EjbModule] Deploying AuthenticationBm
+09:19:39,416 INFO  [ProxyFactory] Bound EJB Home 'AuthenticationBm' to jndi 'ejb/AuthenticationBm'
+09:19:39,435 INFO  [EjbModule] Deploying CalendarBm
+09:19:39,482 INFO  [ProxyFactory] Bound EJB Home 'CalendarBm' to jndi 'ejb/CalendarBm'
+09:19:39,504 INFO  [EjbModule] Deploying ClipboardBm
+09:19:39,604 INFO  [ProxyFactory] Bound EJB Home 'ClipboardBm' to jndi 'ejb/ClipboardBm'
+09:19:39,625 INFO  [EjbModule] Deploying Contact
+09:19:39,676 INFO  [EjbModule] Deploying ContactBm
+09:19:39,731 INFO  [ProxyFactory] Bound EJB Home 'Contact' to jndi 'ejb/Contact'
+09:19:39,749 INFO  [ProxyFactory] Bound EJB Home 'ContactBm' to jndi 'ejb/ContactBm'
+09:19:39,768 INFO  [EjbModule] Deploying FavoritBm
+09:19:39,798 INFO  [ProxyFactory] Bound EJB Home 'FavoritBm' to jndi 'ejb/FavoritBm'
+09:19:39,816 INFO  [EjbModule] Deploying FormTemplateBm
+09:19:39,846 INFO  [ProxyFactory] Bound EJB Home 'FormTemplateBm' to jndi 'ejb/FormTemplateBm'
+09:19:39,864 INFO  [EjbModule] Deploying ForumsBM
+09:19:39,910 INFO  [ProxyFactory] Bound EJB Home 'ForumsBM' to jndi 'ejb/ForumsBM'
+09:19:39,928 INFO  [EjbModule] Deploying GalleryBm
+09:19:39,969 INFO  [ProxyFactory] Bound EJB Home 'GalleryBm' to jndi 'ejb/GalleryBm'
+09:19:39,989 INFO  [EjbModule] Deploying KmeliaBm
+09:19:40,056 INFO  [ProxyFactory] Bound EJB Home 'KmeliaBm' to jndi 'ejb/KmeliaBm'
+09:19:40,076 INFO  [EjbModule] Deploying MyDBBm
+09:19:40,105 INFO  [ProxyFactory] Bound EJB Home 'MyDBBm' to jndi 'ejb/MyDBBm'
+09:19:40,124 INFO  [EjbModule] Deploying MyLinks
+09:19:40,156 INFO  [ProxyFactory] Bound EJB Home 'MyLinks' to jndi 'ejb/MyLinks'
+09:19:40,174 INFO  [EjbModule] Deploying Node
+09:19:40,183 INFO  [EjbModule] Deploying CoordinatesBm
+09:19:40,195 INFO  [EjbModule] Deploying NodeBm
+09:19:40,250 INFO  [ProxyFactory] Bound EJB Home 'Node' to jndi 'ejb/Node'
+09:19:40,266 INFO  [ProxyFactory] Bound EJB Home 'CoordinatesBm' to jndi 'ejb/CoordinatesBm'
+09:19:40,289 INFO  [ProxyFactory] Bound EJB Home 'NodeBm' to jndi 'ejb/NodeBm'
+09:19:40,307 INFO  [EjbModule] Deploying NotationBm
+09:19:40,336 INFO  [ProxyFactory] Bound EJB Home 'NotationBm' to jndi 'ejb/NotationBm'
+09:19:40,356 INFO  [EjbModule] Deploying ThesaurusBm
+09:19:40,365 INFO  [EjbModule] Deploying PdcBm
+09:19:40,373 INFO  [EjbModule] Deploying pdcSubscription
+09:19:40,381 INFO  [EjbModule] Deploying InterestCenter
+09:19:40,441 INFO  [ProxyFactory] Bound EJB Home 'ThesaurusBm' to jndi 'ejb/ThesaurusBm'
+09:19:40,455 INFO  [ProxyFactory] Bound EJB Home 'PdcBm' to jndi 'ejb/PdcBm'
+09:19:40,468 INFO  [ProxyFactory] Bound EJB Home 'pdcSubscription' to jndi 'ejb/pdcSubscription'
+09:19:40,480 INFO  [ProxyFactory] Bound EJB Home 'InterestCenter' to jndi 'ejb/InterestCenter'
+09:19:40,496 INFO  [EjbModule] Deploying ProcessManagerBm
+09:19:40,524 INFO  [ProxyFactory] Bound EJB Home 'ProcessManagerBm' to jndi 'ejb/ProcessManagerBm'
+09:19:40,541 INFO  [EjbModule] Deploying ProjectManagerBm
+09:19:40,577 INFO  [ProxyFactory] Bound EJB Home 'ProjectManagerBm' to jndi 'ejb/ProjectManagerBm'
+09:19:40,597 INFO  [EjbModule] Deploying PublicationBm
+09:19:40,606 INFO  [EjbModule] Deploying Publication
+09:19:40,670 INFO  [ProxyFactory] Bound EJB Home 'PublicationBm' to jndi 'ejb/PublicationBm'
+09:19:40,685 INFO  [ProxyFactory] Bound EJB Home 'Publication' to jndi 'ejb/Publication'
+09:19:40,702 INFO  [EjbModule] Deploying QuestionResultBm
+09:19:40,710 INFO  [EjbModule] Deploying QuestionContainerBm
+09:19:40,719 INFO  [EjbModule] Deploying QuestionBm
+09:19:40,727 INFO  [EjbModule] Deploying AnswerBm
+09:19:40,735 INFO  [EjbModule] Deploying ScoreBm
+09:19:41,296 INFO  [ProxyFactory] Bound EJB Home 'QuestionResultBm' to jndi 'ejb/QuestionResultBm'
+09:19:41,309 INFO  [ProxyFactory] Bound EJB Home 'QuestionContainerBm' to jndi 'ejb/QuestionContainerBm'
+09:19:41,320 INFO  [ProxyFactory] Bound EJB Home 'QuestionBm' to jndi 'ejb/QuestionBm'
+09:19:41,330 INFO  [ProxyFactory] Bound EJB Home 'AnswerBm' to jndi 'ejb/AnswerBm'
+09:19:41,340 INFO  [ProxyFactory] Bound EJB Home 'ScoreBm' to jndi 'ejb/ScoreBm'
+09:19:41,357 INFO  [EjbModule] Deploying StatisticBm
+09:19:41,379 INFO  [ProxyFactory] Bound EJB Home 'StatisticBm' to jndi 'ejb/StatisticBm'
+09:19:41,390 INFO  [EjbModule] Deploying TagCloudBm
+09:19:41,410 INFO  [ProxyFactory] Bound EJB Home 'TagCloudBm' to jndi 'ejb/TagCloudBm'
+09:19:41,422 INFO  [EjbModule] Deploying Versioning
+09:19:41,448 INFO  [ProxyFactory] Bound EJB Home 'Versioning' to jndi 'ejb/Versioning'
+09:19:41,458 INFO  [EjbModule] Deploying webSitesBm
+09:19:41,480 INFO  [ProxyFactory] Bound EJB Home 'webSitesBm' to jndi 'ejb/webSitesBm'
+09:19:41,489 INFO  [EjbModule] Deploying YellowpagesBm
+09:19:41,514 INFO  [ProxyFactory] Bound EJB Home 'YellowpagesBm' to jndi 'ejb/YellowpagesBm'
+09:19:41,536 INFO  [HornetQServerImpl] trying to deploy queue jms.queue.ExpiryQueue
+09:19:41,606 INFO  [HornetQServerImpl] trying to deploy queue jms.topic.comments
+09:19:41,617 INFO  [HornetQServerImpl] trying to deploy queue jms.queue.notificationsQueue
+09:19:41,620 INFO  [HornetQServerImpl] trying to deploy queue jms.queue.statisticsQueue
+09:19:41,624 INFO  [HornetQServerImpl] trying to deploy queue jms.queue.DLQ
+09:19:41,635 INFO  [HornetQServerImpl] trying to deploy queue jms.topic.admin
+09:19:41,651 INFO  [HornetQServerImpl] trying to deploy queue jms.topic.nodes
+09:19:41,654 INFO  [TomcatDeployment] deploy, ctxPath=/silverpeas
+09:19:41,875 INFO  [[/silverpeas]] Initializing Spring root WebApplicationContext
+09:19:53,838 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/Response.hbm.xml
+09:19:53,876 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/Attachment.hbm.xml
+09:19:53,905 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/ExternalUser.hbm.xml
+09:19:53,935 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/Message.hbm.xml
+09:19:53,958 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/SearchField.hbm.xml
+09:19:53,984 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/Contributor.hbm.xml
+09:19:54,012 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/ScheduleEvent.hbm.xml
+09:19:54,038 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/InternalSubscriber.hbm.xml
+09:19:54,061 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/MailingList.hbm.xml
+09:19:54,087 INFO  [Configuration] Reading mappings from file: /home/mmoquillon/Applications/jboss-6.1.0.Final/server/default/deploy/silverpeas/silverpeas.ear/war-ic.war/WEB-INF/mappings/DateOption.hbm.xml
+09:19:54,149 INFO  [HbmBinder] Mapping class: com.silverpeas.scheduleevent.service.model.beans.Response -> sc_scheduleevent_response
+09:19:54,171 INFO  [HbmBinder] Mapping class: com.silverpeas.mailinglist.service.model.beans.Attachment -> sc_mailinglist_attachment
+09:19:54,173 INFO  [HbmBinder] Mapping class: com.silverpeas.mailinglist.service.model.beans.ExternalUser -> sc_mailinglist_external_user
+09:19:54,173 INFO  [HbmBinder] Mapping class: com.silverpeas.mailinglist.service.model.beans.Message -> sc_mailinglist_message
+09:19:54,181 INFO  [HbmBinder] Mapping class: com.silverpeas.whitePages.model.SearchField -> sc_whitepages_searchfields
+09:19:54,182 INFO  [HbmBinder] Mapping class: com.silverpeas.scheduleevent.service.model.beans.Contributor -> sc_scheduleevent_contributor
+09:19:54,183 INFO  [HbmBinder] Mapping class: com.silverpeas.scheduleevent.service.model.beans.ScheduleEvent -> sc_scheduleevent_list
+09:19:54,185 INFO  [HbmBinder] Mapping class: com.silverpeas.mailinglist.service.model.beans.InternalSubscriber -> sc_mailinglist_internal_sub
+09:19:54,187 INFO  [HbmBinder] Mapping subclass: com.silverpeas.mailinglist.service.model.beans.InternalUserSubscriber -> sc_mailinglist_internal_sub
+09:19:54,187 INFO  [HbmBinder] Mapping subclass: com.silverpeas.mailinglist.service.model.beans.InternalGroupSubscriber -> sc_mailinglist_internal_sub
+09:19:54,188 INFO  [HbmBinder] Mapping class: com.silverpeas.mailinglist.service.model.beans.MailingList -> sc_mailinglist_list
+09:19:54,189 INFO  [HbmBinder] Mapping class: com.silverpeas.scheduleevent.service.model.beans.DateOption -> sc_scheduleevent_options
+09:19:54,190 INFO  [HbmBinder] Mapping collection: com.silverpeas.mailinglist.service.model.beans.Message.attachments -> sc_mailinglist_attachment
+09:19:54,190 INFO  [HbmBinder] Mapping collection: com.silverpeas.scheduleevent.service.model.beans.ScheduleEvent.dates -> sc_scheduleevent_options
+09:19:54,191 INFO  [HbmBinder] Mapping collection: com.silverpeas.scheduleevent.service.model.beans.ScheduleEvent.contributors -> sc_scheduleevent_contributor
+09:19:54,192 INFO  [HbmBinder] Mapping collection: com.silverpeas.scheduleevent.service.model.beans.ScheduleEvent.responses -> sc_scheduleevent_response
+09:19:54,192 INFO  [HbmBinder] Mapping collection: com.silverpeas.mailinglist.service.model.beans.MailingList.externalSubscribers -> sc_mailinglist_external_user
+09:19:54,193 INFO  [HbmBinder] Mapping collection: com.silverpeas.mailinglist.service.model.beans.MailingList.internalSubscribers -> sc_mailinglist_internal_sub
+09:19:54,193 INFO  [HbmBinder] Mapping collection: com.silverpeas.mailinglist.service.model.beans.MailingList.groupSubscribers -> sc_mailinglist_internal_sub
+09:19:54,219 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:54,232 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:54,238 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:54,244 INFO  [HibernateSearchEventListenerRegister] Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+09:19:54,249 INFO  [ConnectionProviderFactory] Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+09:19:54,301 INFO  [Dialect] Using dialect: org.hibernate.dialect.PostgreSQLDialect
+09:19:54,333 INFO  [JdbcSupportLoader] Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+09:19:54,333 INFO  [SettingsFactory] Database ->
+       name : PostgreSQL
+    version : 9.1.5
+      major : 9
+      minor : 1
+09:19:54,334 INFO  [SettingsFactory] Driver ->
+       name : PostgreSQL Native Driver
+    version : PostgreSQL 9.1 JDBC4 (build 902)
+      major : 9
+      minor : 1
+09:19:54,335 INFO  [TransactionFactoryFactory] Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+09:19:54,336 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+09:19:54,336 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+09:19:54,336 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+09:19:54,337 INFO  [SettingsFactory] Scrollable result sets: enabled
+09:19:54,337 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+09:19:54,338 INFO  [SettingsFactory] Connection release mode: auto
+09:19:54,338 INFO  [SettingsFactory] Default batch fetch size: 1
+09:19:54,338 INFO  [SettingsFactory] Generate SQL with comments: disabled
+09:19:54,339 INFO  [SettingsFactory] Order SQL updates by primary key: disabled
+09:19:54,339 INFO  [SettingsFactory] Order SQL inserts for batching: disabled
+09:19:54,339 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+09:19:54,341 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+09:19:54,341 INFO  [SettingsFactory] Query language substitutions: {false=0, true=1}
+09:19:54,341 INFO  [SettingsFactory] JPA-QL strict compliance: disabled
+09:19:54,342 INFO  [SettingsFactory] Second-level cache: enabled
+09:19:54,342 INFO  [SettingsFactory] Query cache: disabled
+09:19:54,342 INFO  [SettingsFactory] Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+09:19:54,345 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+09:19:54,345 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+09:19:54,346 INFO  [SettingsFactory] Statistics: disabled
+09:19:54,346 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+09:19:54,346 INFO  [SettingsFactory] Default entity-mode: pojo
+09:19:54,346 INFO  [SettingsFactory] Named query checking : enabled
+09:19:54,347 INFO  [SettingsFactory] Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+09:19:54,361 INFO  [SessionFactoryImpl] building session factory
+09:19:54,362 INFO  [BasicTypeRegistry] Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@42cceaa3
+09:19:54,366 WARN  [UUIDHexGenerator] Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+09:19:54,511 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+09:19:55,180 INFO  [Ejb3Configuration] Processing PersistenceUnitInfo [
+	name: default
+	...]
+09:19:55,219 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.kmelia.domain.TopicSearch
+09:19:55,220 INFO  [EntityBinder] Bind entity com.silverpeas.kmelia.domain.TopicSearch on table sc_kmelia_search
+09:19:55,227 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.delegatednews.model.DelegatedNews
+09:19:55,228 INFO  [EntityBinder] Bind entity com.silverpeas.delegatednews.model.DelegatedNews on table sc_delegatednews_news
+09:19:55,231 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.socialnetwork.model.ExternalAccount
+09:19:55,232 INFO  [QueryBinder] Binding Named query: ExternalAccount.findBySilverpeasUserId => select e FROM ExternalAccount e WHERE e.silverpeasUserId = :silverpeasUserId
+09:19:55,233 INFO  [EntityBinder] Bind entity com.silverpeas.socialnetwork.model.ExternalAccount on table sb_sn_externalaccount
+09:19:55,242 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.domains.silverpeasdriver.SPUser
+09:19:55,242 INFO  [QueryBinder] Binding Named query: SPUser.findByFirstname => SELECT s FROM SPUser s WHERE s.firstname = :firstname
+09:19:55,242 INFO  [QueryBinder] Binding Named query: SPUser.findByLastname => SELECT s FROM SPUser s WHERE s.lastname = :lastname
+09:19:55,243 INFO  [QueryBinder] Binding Named query: SPUser.findByPhone => SELECT s FROM SPUser s WHERE s.phone = :phone
+09:19:55,243 INFO  [QueryBinder] Binding Named query: SPUser.findByHomephone => SELECT s FROM SPUser s WHERE s.homephone = :homephone
+09:19:55,243 INFO  [QueryBinder] Binding Named query: SPUser.findByCellphone => SELECT s FROM SPUser s WHERE s.cellphone = :cellphone
+09:19:55,244 INFO  [QueryBinder] Binding Named query: SPUser.findByFax => SELECT s FROM SPUser s WHERE s.fax = :fax
+09:19:55,244 INFO  [QueryBinder] Binding Named query: SPUser.findByAddress => SELECT s FROM SPUser s WHERE s.address = :address
+09:19:55,244 INFO  [QueryBinder] Binding Named query: SPUser.findByTitle => SELECT s FROM SPUser s WHERE s.title = :title
+09:19:55,245 INFO  [QueryBinder] Binding Named query: SPUser.findByCompany => SELECT s FROM SPUser s WHERE s.company = :company
+09:19:55,245 INFO  [QueryBinder] Binding Named query: SPUser.findByPosition => SELECT s FROM SPUser s WHERE s.position = :position
+09:19:55,245 INFO  [QueryBinder] Binding Named query: SPUser.findByBoss => SELECT s FROM SPUser s WHERE s.boss = :boss
+09:19:55,246 INFO  [QueryBinder] Binding Named query: SPUser.findByLogin => SELECT s FROM SPUser s WHERE s.login = :login
+09:19:55,246 INFO  [QueryBinder] Binding Named query: SPUser.findByPassword => SELECT s FROM SPUser s WHERE s.password = :password
+09:19:55,247 INFO  [QueryBinder] Binding Named query: SPUser.findByPasswordvalid => SELECT s FROM SPUser s WHERE s.passwordvalid = :passwordvalid
+09:19:55,247 INFO  [QueryBinder] Binding Named query: SPUser.findByLoginmail => SELECT s FROM SPUser s WHERE s.loginmail = :loginmail
+09:19:55,247 INFO  [QueryBinder] Binding Named query: SPUser.findByEmail => SELECT s FROM SPUser s WHERE s.email = :email
+09:19:55,247 INFO  [EntityBinder] Bind entity com.silverpeas.domains.silverpeasdriver.SPUser on table domainsp_user
+09:19:55,256 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.domains.silverpeasdriver.SPGroup
+09:19:55,257 INFO  [QueryBinder] Binding Named query: SPGroup.findByName => SELECT s FROM SPGroup s WHERE s.name = :name
+09:19:55,257 INFO  [QueryBinder] Binding Named query: SPGroup.findByDescription => SELECT s FROM SPGroup s WHERE s.description = :description
+09:19:55,257 INFO  [QueryBinder] Binding Named query: SPGroup.listAllRootGroups => SELECT s FROM SPGroup s WHERE s.parent is null
+09:19:55,258 INFO  [EntityBinder] Bind entity com.silverpeas.domains.silverpeasdriver.SPGroup on table domainsp_group
+09:19:55,261 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.notification.model.NotificationResourceData
+09:19:55,262 INFO  [EntityBinder] Bind entity com.silverpeas.notification.model.NotificationResourceData on table st_notificationresource
+09:19:55,264 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.notification.delayed.model.DelayedNotificationUserSetting
+09:19:55,265 INFO  [EntityBinder] Bind entity com.silverpeas.notification.delayed.model.DelayedNotificationUserSetting on table st_delayednotifusersetting
+09:19:55,269 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.notification.delayed.model.DelayedNotificationData
+09:19:55,269 INFO  [EntityBinder] Bind entity com.silverpeas.notification.delayed.model.DelayedNotificationData on table st_delayednotification
+09:19:55,277 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.personalization.UserPreferences
+09:19:55,277 INFO  [EntityBinder] Bind entity com.silverpeas.personalization.UserPreferences on table personalization
+09:19:55,281 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.pdc.model.PdcClassification
+09:19:55,281 INFO  [EntityBinder] Bind entity com.silverpeas.pdc.model.PdcClassification on table PdcClassification
+09:19:55,290 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.pdc.model.PdcPosition
+09:19:55,290 INFO  [EntityBinder] Bind entity com.silverpeas.pdc.model.PdcPosition on table PdcPosition
+09:19:55,292 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.pdc.model.PdcAxisValue
+09:19:55,293 INFO  [EntityBinder] Bind entity com.silverpeas.pdc.model.PdcAxisValue on table PdcAxisValue
+09:19:55,296 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.sharing.model.DownloadDetail
+09:19:55,296 INFO  [EntityBinder] Bind entity com.silverpeas.sharing.model.DownloadDetail on table sb_filesharing_history
+09:19:55,298 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.sharing.model.Ticket
+09:19:55,298 INFO  [EntityBinder] Bind entity com.silverpeas.sharing.model.Ticket on table sb_filesharing_ticket
+09:19:55,304 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.sharing.model.NodeTicket
+09:19:55,305 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.sharing.model.VersionFileTicket
+09:19:55,306 INFO  [AnnotationBinder] Binding entity from annotated class: com.silverpeas.sharing.model.SimpleFileTicket
+09:19:55,307 INFO  [AnnotationBinder] Binding entity from annotated class: org.silverpeas.quota.model.Quota
+09:19:55,307 INFO  [EntityBinder] Bind entity org.silverpeas.quota.model.Quota on table st_quota
+09:19:55,310 INFO  [AnnotationBinder] Binding entity from annotated class: org.silverpeas.resourcemanager.model.ReservedResource
+09:19:55,311 INFO  [EntityBinder] Bind entity org.silverpeas.resourcemanager.model.ReservedResource on table sc_resources_reservedresource
+09:19:55,313 INFO  [AnnotationBinder] Binding entity from annotated class: org.silverpeas.resourcemanager.model.Category
+09:19:55,314 INFO  [EntityBinder] Bind entity org.silverpeas.resourcemanager.model.Category on table sc_resources_category
+09:19:55,318 INFO  [AnnotationBinder] Binding entity from annotated class: org.silverpeas.resourcemanager.model.ResourceValidator
+09:19:55,318 INFO  [EntityBinder] Bind entity org.silverpeas.resourcemanager.model.ResourceValidator on table sc_resources_managers
+09:19:55,321 INFO  [AnnotationBinder] Binding entity from annotated class: org.silverpeas.resourcemanager.model.Resource
+09:19:55,321 INFO  [EntityBinder] Bind entity org.silverpeas.resourcemanager.model.Resource on table sc_resources_resource
+09:19:55,327 INFO  [AnnotationBinder] Binding entity from annotated class: org.silverpeas.resourcemanager.model.Reservation
+09:19:55,327 INFO  [EntityBinder] Bind entity org.silverpeas.resourcemanager.model.Reservation on table sc_resources_reservation
+09:19:55,338 INFO  [CollectionBinder] Mapping collection: com.silverpeas.domains.silverpeasdriver.SPGroup.subGroups -> domainsp_group
+09:19:55,338 INFO  [CollectionBinder] Mapping collection: com.silverpeas.notification.delayed.model.DelayedNotificationUserSetting.delayedNotifications -> st_delayednotification
+09:19:55,339 INFO  [CollectionBinder] Mapping collection: com.silverpeas.sharing.model.Ticket.downloads -> sb_filesharing_history
+09:19:55,339 INFO  [CollectionBinder] Mapping collection: org.silverpeas.resourcemanager.model.Category.resources -> sc_resources_resource
+09:19:55,339 INFO  [CollectionBinder] Mapping collection: org.silverpeas.resourcemanager.model.Resource.managers -> sc_resources_managers
+09:19:55,386 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:55,492 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:55,527 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:55,530 INFO  [HibernateSearchEventListenerRegister] Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+09:19:55,566 INFO  [ConnectionProviderFactory] Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+09:19:55,567 INFO  [InjectedDataSourceConnectionProvider] Using provided datasource
+09:19:55,597 INFO  [Dialect] Using dialect: org.hibernate.dialect.PostgreSQLDialect
+09:19:55,598 INFO  [JdbcSupportLoader] Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+09:19:55,599 INFO  [SettingsFactory] Database ->
+       name : PostgreSQL
+    version : 9.1.5
+      major : 9
+      minor : 1
+09:19:55,599 INFO  [SettingsFactory] Driver ->
+       name : PostgreSQL Native Driver
+    version : PostgreSQL 9.1 JDBC4 (build 902)
+      major : 9
+      minor : 1
+09:19:55,600 INFO  [TransactionFactoryFactory] Using default transaction strategy (direct JDBC transactions)
+09:19:55,602 INFO  [TransactionManagerLookupFactory] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+09:19:55,603 INFO  [SettingsFactory] Automatic flush during beforeCompletion(): disabled
+09:19:55,603 INFO  [SettingsFactory] Automatic session close at end of transaction: disabled
+09:19:55,603 INFO  [SettingsFactory] JDBC batch size: 15
+09:19:55,603 INFO  [SettingsFactory] JDBC batch updates for versioned data: disabled
+09:19:55,603 INFO  [SettingsFactory] Scrollable result sets: enabled
+09:19:55,604 INFO  [SettingsFactory] JDBC3 getGeneratedKeys(): enabled
+09:19:55,604 INFO  [SettingsFactory] Connection release mode: auto
+09:19:55,604 INFO  [SettingsFactory] Default batch fetch size: 1
+09:19:55,604 INFO  [SettingsFactory] Generate SQL with comments: disabled
+09:19:55,604 INFO  [SettingsFactory] Order SQL updates by primary key: disabled
+09:19:55,604 INFO  [SettingsFactory] Order SQL inserts for batching: disabled
+09:19:55,605 INFO  [SettingsFactory] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+09:19:55,605 INFO  [ASTQueryTranslatorFactory] Using ASTQueryTranslatorFactory
+09:19:55,605 INFO  [SettingsFactory] Query language substitutions: {}
+09:19:55,605 INFO  [SettingsFactory] JPA-QL strict compliance: enabled
+09:19:55,606 INFO  [SettingsFactory] Second-level cache: enabled
+09:19:55,606 INFO  [SettingsFactory] Query cache: disabled
+09:19:55,606 INFO  [SettingsFactory] Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+09:19:55,608 INFO  [RegionFactoryCacheProviderBridge] Cache provider: org.hibernate.cache.NoCacheProvider
+09:19:55,610 INFO  [SettingsFactory] Optimize cache for minimal puts: disabled
+09:19:55,611 INFO  [SettingsFactory] Structured second-level cache entries: disabled
+09:19:55,611 INFO  [SettingsFactory] Statistics: disabled
+09:19:55,611 INFO  [SettingsFactory] Deleted entity synthetic identifier rollback: disabled
+09:19:55,611 INFO  [SettingsFactory] Default entity-mode: pojo
+09:19:55,612 INFO  [SettingsFactory] Named query checking : enabled
+09:19:55,612 INFO  [SettingsFactory] Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+09:19:55,678 INFO  [SessionFactoryImpl] building session factory
+09:19:55,679 INFO  [BasicTypeRegistry] Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@42cceaa3
+09:19:55,970 INFO  [SessionFactoryObjectFactory] Not binding factory to JNDI, no JNDI name configured
+09:19:55,973 INFO  [SchemaValidator] Running schema validator
+09:19:55,974 INFO  [SchemaValidator] fetching database metadata
+09:19:56,013 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:19:56,082 INFO  [TableMetadata] table found: public.pdcaxisvalue
+09:19:56,082 INFO  [TableMetadata] columns: [valueid, axisid]
+09:19:56,091 INFO  [TableMetadata] table found: public.pdcclassification
+09:19:56,091 INFO  [TableMetadata] columns: [id, contentid, modifiable, instanceid, nodeid]
+09:19:56,102 INFO  [TableMetadata] table found: public.pdcclassification_pdcposition
+09:19:56,102 INFO  [TableMetadata] columns: [positions_id, pdcclassification_id]
+09:19:56,112 INFO  [TableMetadata] table found: public.pdcposition
+09:19:56,112 INFO  [TableMetadata] columns: [id]
+09:19:56,126 INFO  [TableMetadata] table found: public.pdcposition_pdcaxisvalue
+09:19:56,126 INFO  [TableMetadata] columns: [axisvalues_valueid, axisvalues_axisid, pdcposition_id]
+09:19:56,135 INFO  [TableMetadata] table found: public.domainsp_group
+09:19:56,135 INFO  [TableMetadata] columns: [id, description, supergroupid, name]
+09:19:56,144 INFO  [TableMetadata] table found: public.domainsp_group_user_rel
+09:19:56,144 INFO  [TableMetadata] columns: [userid, groupid]
+09:19:56,154 INFO  [TableMetadata] table found: public.domainsp_user
+09:19:56,154 INFO  [TableMetadata] columns: [position, phone, fax, boss, passwordvalid, lastname, firstname, password, id, title, email, address, cellphone, company, loginmail, login, homephone]
+09:19:56,165 INFO  [TableMetadata] table found: public.personalization
+09:19:56,165 INFO  [TableMetadata] columns: [look, id, languages, menudisplay, webdaveditingstatus, thesaurusstatus, personalwspace, draganddropstatus]
+09:19:56,173 INFO  [TableMetadata] table found: public.sb_filesharing_history
+09:19:56,173 INFO  [TableMetadata] columns: [downloaddate, id, keyfile, downloadip]
+09:19:56,180 INFO  [TableMetadata] table found: public.sb_filesharing_ticket
+09:19:56,181 INFO  [TableMetadata] columns: [shared_object, keyfile, creatorid, nbaccessmax, shared_object_type, updateid, componentid, enddate, updatedate, creationdate, nbaccess]
+09:19:56,188 INFO  [TableMetadata] table found: public.sb_sn_externalaccount
+09:19:56,188 INFO  [TableMetadata] columns: [silverpeasuserid, networkid, profileid]
+09:19:56,196 INFO  [TableMetadata] table found: public.sc_delegatednews_news
+09:19:56,196 INFO  [TableMetadata] columns: [contributorid, status, validationdate, validatorid, enddate, begindate, instanceid, pubid]
+09:19:56,204 INFO  [TableMetadata] table found: public.sc_kmelia_search
+09:19:56,204 INFO  [TableMetadata] columns: [id, topicid, query, userid, language, searchdate, instanceid]
+09:19:56,212 INFO  [TableMetadata] table found: public.sc_resources_category
+09:19:56,212 INFO  [TableMetadata] columns: [updaterid, id, form, description, name, bookable, responsibleid, updatedate, createrid, creationdate, instanceid]
+09:19:56,220 INFO  [TableMetadata] table found: public.sc_resources_managers
+09:19:56,220 INFO  [TableMetadata] columns: [resourceid, managerid]
+09:19:56,226 INFO  [TableMetadata] table found: public.sc_resources_reservation
+09:19:56,226 INFO  [TableMetadata] columns: [id, status, reason, userid, evenement, place, enddate, begindate, updatedate, creationdate, instanceid]
+09:19:56,232 INFO  [TableMetadata] table found: public.sc_resources_reservedresource
+09:19:56,232 INFO  [TableMetadata] columns: [status, reservationid, resourceid]
+09:19:56,238 INFO  [TableMetadata] table found: public.sc_resources_resource
+09:19:56,238 INFO  [TableMetadata] columns: [updaterid, id, categoryid, description, name, bookable, responsibleid, updatedate, createrid, creationdate, instanceid]
+09:19:56,244 INFO  [TableMetadata] table found: public.st_delayednotification
+09:19:56,245 INFO  [TableMetadata] columns: [message, fromuserid, id, action, userid, language, notificationresourceid, creationdate, channel]
+09:19:56,250 INFO  [TableMetadata] table found: public.st_delayednotifusersetting
+09:19:56,250 INFO  [TableMetadata] columns: [id, userid, frequency, channel]
+09:19:56,256 INFO  [TableMetadata] table found: public.st_notificationresource
+09:19:56,257 INFO  [TableMetadata] columns: [id, resourcedescription, resourceurl, resourcename, componentinstanceid, resourcelocation, resourcetype, resourceid]
+09:19:56,263 INFO  [TableMetadata] table found: public.st_quota
+09:19:56,263 INFO  [TableMetadata] columns: [maxcount, id, currentcount, mincount, resourceid, quotatype, savedate]
+09:19:56,272 INFO  [TableMetadata] table found: public.uniqueid
+09:19:56,272 INFO  [TableMetadata] columns: [tablename, maxid]
+09:20:01,369 INFO  [DefaultTraversableResolver] Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+09:20:01,420 INFO  [STDOUT] Silverpeas Initializer well started.
+09:20:06,907 INFO  [service] PSC_CSPCS001 : Started initializing ServiceManager
+09:20:06,922 INFO  [service] PSC_CSPCS004 : Service added, Name: com.sun.portal.container.service.CoordinationService, Implementation: com.sun.portal.container.service.coordination.impl.CoordinationServiceImpl
+09:20:06,929 INFO  [service] PSC_CSPCS004 : Service added, Name: com.sun.portal.container.service.CachingService, Implementation: com.sun.portal.container.service.caching.impl.CachingServiceImpl
+09:20:06,935 INFO  [service] PSC_CSPCS004 : Service added, Name: com.sun.portal.container.service.ClientCachingService, Implementation: com.sun.portal.container.service.caching.impl.ClientCachingServiceImpl
+09:20:06,939 INFO  [service] PSC_CSPCS004 : Service added, Name: com.sun.portal.container.service.DeploymentService_Local, Implementation: com.sun.portal.container.service.deployment.impl.DeploymentServiceLocalImpl
+09:20:06,945 INFO  [service] PSC_CSPCS004 : Service added, Name: com.sun.portal.container.service.ContainerEventService, Implementation: com.sun.portal.container.service.coordination.impl.ContainerEventServiceImpl
+09:20:06,955 INFO  [service] PSC_CSPCS004 : Service added, Name: com.sun.portal.container.service.PolicyService, Implementation: com.sun.portal.container.service.policy.impl.PolicyServiceImpl
+09:20:06,958 INFO  [service] PSC_CSPCS002 : Finished initializing ServiceManager
+09:20:06,961 INFO  [impl] PSPL_PCCSPCPCI0003 : Starting PortletContainer 2.1
+09:20:06,977 INFO  [[/silverpeas]]  Assigning new engine to 1233994260
+09:20:06,978 INFO  [[/silverpeas]] No jspwiki.propertyfile defined for this context, using default from /WEB-INF/jspwiki.properties
+09:20:06,979 INFO  [[/silverpeas]] Loading cascading properties...
+09:20:06,979 INFO  [[/silverpeas]]  No cascading properties defined for this context
+09:20:07,176 INFO  [STDOUT] Starting up background thread: JSPWiki RSS Generator.
+09:20:07,185 INFO  [STDOUT] Starting up background thread: WatchDog for 'Silverpeas'.
+09:20:07,220 INFO  [[/silverpeas]] JcrInitializer: Initializing the repository ...........
+09:20:07,567 INFO  [service] Removing bootstrap log handlers
+10:01:16,080 INFO  [service] Restored bootstrap log handlers
+10:01:16,094 INFO  [TomcatDeployment] undeploy, ctxPath=/silverpeas
+10:01:16,324 INFO  [STDOUT] ERROR : Unregistering the repository ........... | MODULE : RepositoryAccessServlet.jackrabbit.unregisterJndi | !!! Message Unregistering the repository ........... NOT INITIALIZED !!! (EXCEPTION : javax.naming.NamingException: Could not dereference object [Root exception is java.lang.IllegalStateException: Shutdown in progress]
+10:01:16,324 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.getObjectInstanceWrapFailure(NamingContext.java:1508)
+10:01:16,324 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:824)
+10:01:16,324 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:688)
+10:01:16,324 INFO  [STDOUT] 	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+10:01:16,325 INFO  [STDOUT] 	at org.apache.jackrabbit.core.jndi.RegistryHelper.unregisterRepository(RegistryHelper.java:94)
+10:01:16,325 INFO  [STDOUT] 	at com.silverpeas.jcrutil.servlets.RepositoryAccessServlet.unregisterJNDI(RepositoryAccessServlet.java:139)
+10:01:16,325 INFO  [STDOUT] 	at com.silverpeas.jcrutil.servlets.RepositoryAccessServlet.destroy(RepositoryAccessServlet.java:131)
+10:01:16,325 INFO  [STDOUT] 	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1388)
+10:01:16,325 INFO  [STDOUT] 	at org.apache.catalina.core.StandardWrapper.stop(StandardWrapper.java:1686)
+10:01:16,326 INFO  [STDOUT] 	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:3961)
+10:01:16,326 INFO  [STDOUT] 	at org.apache.catalina.core.ContainerBase.destroy(ContainerBase.java:1162)
+10:01:16,326 INFO  [STDOUT] 	at org.apache.catalina.core.StandardContext.destroy(StandardContext.java:4062)
+10:01:16,326 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:01:16,326 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+10:01:16,326 INFO  [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+10:01:16,326 INFO  [STDOUT] 	at java.lang.reflect.Method.invoke(Method.java:597)
+10:01:16,326 INFO  [STDOUT] 	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performUndeployInternal(TomcatDeployment.java:572)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performUndeploy(TomcatDeployment.java:548)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.web.deployers.AbstractWarDeployment.stop(AbstractWarDeployment.java:495)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.web.deployers.WebModule.stopModule(WebModule.java:133)
+10:01:16,327 INFO  [STDOUT] 	at org.jboss.web.deployers.WebModule.stop(WebModule.java:100)
+10:01:16,328 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:01:16,328 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+10:01:16,328 INFO  [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+10:01:16,328 INFO  [STDOUT] 	at java.lang.reflect.Method.invoke(Method.java:597)
+10:01:16,328 INFO  [STDOUT] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157)
+10:01:16,328 INFO  [STDOUT] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96)
+10:01:16,328 INFO  [STDOUT] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+10:01:16,328 INFO  [STDOUT] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:271)
+10:01:16,328 INFO  [STDOUT] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.system.microcontainer.ServiceProxy.invoke(ServiceProxy.java:206)
+10:01:16,329 INFO  [STDOUT] 	at $Proxy41.stop(Unknown Source)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.system.microcontainer.StartStopLifecycleAction.uninstallAction(StartStopLifecycleAction.java:74)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.system.microcontainer.StartStopLifecycleAction.uninstallAction(StartStopLifecycleAction.java:41)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58)
+10:01:16,329 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,330 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:756)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:669)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:230)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:58)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalUndeploy(AbstractSimpleRealDeployer.java:70)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.undeploy(AbstractRealDeployer.java:117)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployerWrapper.undeploy(DeployerWrapper.java:204)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUndeploy(DeployersImpl.java:1862)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1769)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1762)
+10:01:16,331 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.uninstall(DeployersImpl.java:1724)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983)
+10:01:16,332 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1968)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1001)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:656)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileDeployAction.undeploy(ProfileDeployAction.java:195)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileDeployAction.uninstallActionInternal(ProfileDeployAction.java:112)
+10:01:16,333 INFO  [STDOUT] 	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:175)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:42)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948)
+10:01:16,334 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.stop(ProfileActivationWrapper.java:210)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationWrapper.stop(ProfileActivationWrapper.java:101)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationService.deactivateProfile(ProfileActivationService.java:220)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationService.deactivate(ProfileActivationService.java:170)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.stop(AbstractProfileServiceBootstrap.java:130)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.shutdown(BasicProfileServiceBootstrap.java:160)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.shutdown(BasicProfileServiceBootstrap.java:56)
+10:01:16,335 INFO  [STDOUT] 	at org.jboss.bootstrap.impl.base.server.AbstractServer.shutdownBootstraps(AbstractServer.java:859)
+10:01:16,336 INFO  [STDOUT] 	at org.jboss.bootstrap.impl.base.server.AbstractServer.shutdown(AbstractServer.java:300)
+10:01:16,336 INFO  [STDOUT] 	at org.jboss.Main$ShutdownHook$1.run(Main.java:1005)
+10:01:16,336 INFO  [STDOUT] Caused by: java.lang.IllegalStateException: Shutdown in progress
+10:01:16,336 INFO  [STDOUT] 	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:39)
+10:01:16,336 INFO  [STDOUT] 	at java.lang.Runtime.addShutdownHook(Runtime.java:192)
+10:01:16,336 INFO  [STDOUT] 	at org.apache.jackrabbit.core.jndi.BindableRepository.init(BindableRepository.java:123)
+10:01:16,336 INFO  [STDOUT] 	at org.apache.jackrabbit.core.jndi.BindableRepository.<init>(BindableRepository.java:106)
+10:01:16,336 INFO  [STDOUT] 	at org.apache.jackrabbit.core.jndi.BindableRepositoryFactory.getObjectInstance(BindableRepositoryFactory.java:52)
+10:01:16,336 INFO  [STDOUT] 	at javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:304)
+10:01:16,337 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.getObjectInstance(NamingContext.java:1483)
+10:01:16,337 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.getObjectInstanceWrapFailure(NamingContext.java:1500)
+10:01:16,337 INFO  [STDOUT] 	... 91 more
+10:01:16,337 INFO  [STDOUT] )
+10:01:16,337 INFO  [[/silverpeas]] JcrInitializer: Closing the repository ...........
+10:01:16,369 INFO  [STDOUT] ERROR : SilverStatisticsSender  | MODULE : silverstatistics.SilverStatisticsSender | !!! Message SilverStatisticsSender  NOT INITIALIZED !!! (EXCEPTION : javax.naming.NameNotFoundException: XAConnectionFactory not bound
+10:01:16,369 INFO  [STDOUT] 	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771)
+10:01:16,369 INFO  [STDOUT] 	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779)
+10:01:16,370 INFO  [STDOUT] 	at org.jnp.server.NamingServer.getObject(NamingServer.java:785)
+10:01:16,370 INFO  [STDOUT] 	at org.jnp.server.NamingServer.lookup(NamingServer.java:443)
+10:01:16,370 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:728)
+10:01:16,370 INFO  [STDOUT] 	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:688)
+10:01:16,370 INFO  [STDOUT] 	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+10:01:16,371 INFO  [STDOUT] 	at com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsSender.<init>(SilverStatisticsSender.java:61)
+10:01:16,371 INFO  [STDOUT] 	at com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsManager.sendStatistic(SilverStatisticsManager.java:259)
+10:01:16,371 INFO  [STDOUT] 	at com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsManager.addStatConnection(SilverStatisticsManager.java:343)
+10:01:16,371 INFO  [STDOUT] 	at com.stratelia.silverpeas.peasCore.SessionManager.removeSession(SessionManager.java:269)
+10:01:16,371 INFO  [STDOUT] 	at com.stratelia.silverpeas.peasCore.SessionManager.closeSession(SessionManager.java:252)
+10:01:16,371 INFO  [STDOUT] 	at com.stratelia.webactiv.servlets.SilverListener.remove(SilverListener.java:64)
+10:01:16,372 INFO  [STDOUT] 	at com.stratelia.webactiv.servlets.SilverListener.sessionDestroyed(SilverListener.java:46)
+10:01:16,372 INFO  [STDOUT] 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:686)
+10:01:16,372 INFO  [STDOUT] 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:649)
+10:01:16,372 INFO  [STDOUT] 	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:677)
+10:01:16,372 INFO  [STDOUT] 	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:3971)
+10:01:16,372 INFO  [STDOUT] 	at org.apache.catalina.core.ContainerBase.destroy(ContainerBase.java:1162)
+10:01:16,372 INFO  [STDOUT] 	at org.apache.catalina.core.StandardContext.destroy(StandardContext.java:4062)
+10:01:16,373 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:01:16,373 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+10:01:16,373 INFO  [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+10:01:16,373 INFO  [STDOUT] 	at java.lang.reflect.Method.invoke(Method.java:597)
+10:01:16,373 INFO  [STDOUT] 	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+10:01:16,373 INFO  [STDOUT] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+10:01:16,373 INFO  [STDOUT] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670)
+10:01:16,374 INFO  [STDOUT] 	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performUndeployInternal(TomcatDeployment.java:572)
+10:01:16,374 INFO  [STDOUT] 	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performUndeploy(TomcatDeployment.java:548)
+10:01:16,374 INFO  [STDOUT] 	at org.jboss.web.deployers.AbstractWarDeployment.stop(AbstractWarDeployment.java:495)
+10:01:16,374 INFO  [STDOUT] 	at org.jboss.web.deployers.WebModule.stopModule(WebModule.java:133)
+10:01:16,374 INFO  [STDOUT] 	at org.jboss.web.deployers.WebModule.stop(WebModule.java:100)
+10:01:16,374 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:01:16,374 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+10:01:16,375 INFO  [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+10:01:16,375 INFO  [STDOUT] 	at java.lang.reflect.Method.invoke(Method.java:597)
+10:01:16,375 INFO  [STDOUT] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157)
+10:01:16,375 INFO  [STDOUT] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96)
+10:01:16,375 INFO  [STDOUT] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+10:01:16,375 INFO  [STDOUT] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:271)
+10:01:16,376 INFO  [STDOUT] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670)
+10:01:16,376 INFO  [STDOUT] 	at org.jboss.system.microcontainer.ServiceProxy.invoke(ServiceProxy.java:206)
+10:01:16,376 INFO  [STDOUT] 	at $Proxy41.stop(Unknown Source)
+10:01:16,376 INFO  [STDOUT] 	at org.jboss.system.microcontainer.StartStopLifecycleAction.uninstallAction(StartStopLifecycleAction.java:74)
+10:01:16,376 INFO  [STDOUT] 	at org.jboss.system.microcontainer.StartStopLifecycleAction.uninstallAction(StartStopLifecycleAction.java:41)
+10:01:16,376 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79)
+10:01:16,377 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131)
+10:01:16,377 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58)
+10:01:16,377 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,377 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,377 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,377 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:756)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:669)
+10:01:16,378 INFO  [STDOUT] 	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:230)
+10:01:16,379 INFO  [STDOUT] 	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:58)
+10:01:16,379 INFO  [STDOUT] 	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalUndeploy(AbstractSimpleRealDeployer.java:70)
+10:01:16,379 INFO  [STDOUT] 	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.undeploy(AbstractRealDeployer.java:117)
+10:01:16,379 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployerWrapper.undeploy(DeployerWrapper.java:204)
+10:01:16,379 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUndeploy(DeployersImpl.java:1862)
+10:01:16,379 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1769)
+10:01:16,380 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1762)
+10:01:16,380 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.uninstall(DeployersImpl.java:1724)
+10:01:16,380 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,380 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,380 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,381 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948)
+10:01:16,381 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654)
+10:01:16,381 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983)
+10:01:16,381 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1968)
+10:01:16,381 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1001)
+10:01:16,381 INFO  [STDOUT] 	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:656)
+10:01:16,382 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106)
+10:01:16,382 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143)
+10:01:16,382 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileDeployAction.undeploy(ProfileDeployAction.java:195)
+10:01:16,382 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileDeployAction.uninstallActionInternal(ProfileDeployAction.java:112)
+10:01:16,382 INFO  [STDOUT] 	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:175)
+10:01:16,383 INFO  [STDOUT] 	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:42)
+10:01:16,383 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79)
+10:01:16,383 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131)
+10:01:16,383 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58)
+10:01:16,383 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,383 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,384 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,384 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948)
+10:01:16,384 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654)
+10:01:16,384 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.stop(ProfileActivationWrapper.java:210)
+10:01:16,384 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationWrapper.stop(ProfileActivationWrapper.java:101)
+10:01:16,384 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationService.deactivateProfile(ProfileActivationService.java:220)
+10:01:16,385 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationService.deactivate(ProfileActivationService.java:170)
+10:01:16,385 INFO  [STDOUT] 	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.stop(AbstractProfileServiceBootstrap.java:130)
+10:01:16,385 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.shutdown(BasicProfileServiceBootstrap.java:160)
+10:01:16,385 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.shutdown(BasicProfileServiceBootstrap.java:56)
+10:01:16,385 INFO  [STDOUT] 	at org.jboss.bootstrap.impl.base.server.AbstractServer.shutdownBootstraps(AbstractServer.java:859)
+10:01:16,385 INFO  [STDOUT] 	at org.jboss.bootstrap.impl.base.server.AbstractServer.shutdown(AbstractServer.java:300)
+10:01:16,389 INFO  [STDOUT] 	at org.jboss.Main$ShutdownHook$1.run(Main.java:1005)
+10:01:16,389 INFO  [STDOUT] )
+10:01:16,393 INFO  [STDOUT] ERROR : SilverStatisticsSender  | MODULE : silverstatistics.SilverStatisticsManager.sendStatistic | !!! Message SilverStatisticsSender  NOT INITIALIZED !!! (EXCEPTION : java.lang.NullPointerException
+10:01:16,393 INFO  [STDOUT] 	at com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsSender.send(SilverStatisticsSender.java:76)
+10:01:16,393 INFO  [STDOUT] 	at com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsManager.sendStatistic(SilverStatisticsManager.java:263)
+10:01:16,394 INFO  [STDOUT] 	at com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsManager.addStatConnection(SilverStatisticsManager.java:343)
+10:01:16,394 INFO  [STDOUT] 	at com.stratelia.silverpeas.peasCore.SessionManager.removeSession(SessionManager.java:269)
+10:01:16,394 INFO  [STDOUT] 	at com.stratelia.silverpeas.peasCore.SessionManager.closeSession(SessionManager.java:252)
+10:01:16,394 INFO  [STDOUT] 	at com.stratelia.webactiv.servlets.SilverListener.remove(SilverListener.java:64)
+10:01:16,394 INFO  [STDOUT] 	at com.stratelia.webactiv.servlets.SilverListener.sessionDestroyed(SilverListener.java:46)
+10:01:16,394 INFO  [STDOUT] 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:686)
+10:01:16,395 INFO  [STDOUT] 	at org.apache.catalina.session.StandardSession.expire(StandardSession.java:649)
+10:01:16,395 INFO  [STDOUT] 	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:677)
+10:01:16,395 INFO  [STDOUT] 	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:3971)
+10:01:16,395 INFO  [STDOUT] 	at org.apache.catalina.core.ContainerBase.destroy(ContainerBase.java:1162)
+10:01:16,395 INFO  [STDOUT] 	at org.apache.catalina.core.StandardContext.destroy(StandardContext.java:4062)
+10:01:16,395 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:01:16,396 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+10:01:16,396 INFO  [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+10:01:16,396 INFO  [STDOUT] 	at java.lang.reflect.Method.invoke(Method.java:597)
+10:01:16,396 INFO  [STDOUT] 	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+10:01:16,396 INFO  [STDOUT] 	at org.jboss.mx.server.RawDynamicInvoker.invoke(RawDynamicInvoker.java:164)
+10:01:16,396 INFO  [STDOUT] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670)
+10:01:16,396 INFO  [STDOUT] 	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performUndeployInternal(TomcatDeployment.java:572)
+10:01:16,397 INFO  [STDOUT] 	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performUndeploy(TomcatDeployment.java:548)
+10:01:16,397 INFO  [STDOUT] 	at org.jboss.web.deployers.AbstractWarDeployment.stop(AbstractWarDeployment.java:495)
+10:01:16,397 INFO  [STDOUT] 	at org.jboss.web.deployers.WebModule.stopModule(WebModule.java:133)
+10:01:16,397 INFO  [STDOUT] 	at org.jboss.web.deployers.WebModule.stop(WebModule.java:100)
+10:01:16,397 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:01:16,397 INFO  [STDOUT] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+10:01:16,398 INFO  [STDOUT] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+10:01:16,398 INFO  [STDOUT] 	at java.lang.reflect.Method.invoke(Method.java:597)
+10:01:16,398 INFO  [STDOUT] 	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157)
+10:01:16,398 INFO  [STDOUT] 	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96)
+10:01:16,398 INFO  [STDOUT] 	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88)
+10:01:16,398 INFO  [STDOUT] 	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:271)
+10:01:16,399 INFO  [STDOUT] 	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670)
+10:01:16,399 INFO  [STDOUT] 	at org.jboss.system.microcontainer.ServiceProxy.invoke(ServiceProxy.java:206)
+10:01:16,399 INFO  [STDOUT] 	at $Proxy41.stop(Unknown Source)
+10:01:16,399 INFO  [STDOUT] 	at org.jboss.system.microcontainer.StartStopLifecycleAction.uninstallAction(StartStopLifecycleAction.java:74)
+10:01:16,399 INFO  [STDOUT] 	at org.jboss.system.microcontainer.StartStopLifecycleAction.uninstallAction(StartStopLifecycleAction.java:41)
+10:01:16,399 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79)
+10:01:16,399 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,400 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537)
+10:01:16,401 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472)
+10:01:16,401 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:756)
+10:01:16,401 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:669)
+10:01:16,401 INFO  [STDOUT] 	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:230)
+10:01:16,401 INFO  [STDOUT] 	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:58)
+10:01:16,401 INFO  [STDOUT] 	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalUndeploy(AbstractSimpleRealDeployer.java:70)
+10:01:16,402 INFO  [STDOUT] 	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.undeploy(AbstractRealDeployer.java:117)
+10:01:16,402 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployerWrapper.undeploy(DeployerWrapper.java:204)
+10:01:16,402 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUndeploy(DeployersImpl.java:1862)
+10:01:16,402 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1769)
+10:01:16,402 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1762)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.uninstall(DeployersImpl.java:1724)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1968)
+10:01:16,403 INFO  [STDOUT] 	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1001)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:656)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileDeployAction.undeploy(ProfileDeployAction.java:195)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileDeployAction.uninstallActionInternal(ProfileDeployAction.java:112)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:175)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:42)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79)
+10:01:16,404 INFO  [STDOUT] 	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.stop(ProfileActivationWrapper.java:210)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationWrapper.stop(ProfileActivationWrapper.java:101)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationService.deactivateProfile(ProfileActivationService.java:220)
+10:01:16,405 INFO  [STDOUT] 	at org.jboss.profileservice.dependency.ProfileActivationService.deactivate(ProfileActivationService.java:170)
+10:01:16,406 INFO  [STDOUT] 	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.stop(AbstractProfileServiceBootstrap.java:130)
+10:01:16,406 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.shutdown(BasicProfileServiceBootstrap.java:160)
+10:01:16,406 INFO  [STDOUT] 	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.shutdown(BasicProfileServiceBootstrap.java:56)
+10:01:16,406 INFO  [STDOUT] 	at org.jboss.bootstrap.impl.base.server.AbstractServer.shutdownBootstraps(AbstractServer.java:859)
+10:01:16,406 INFO  [STDOUT] 	at org.jboss.bootstrap.impl.base.server.AbstractServer.shutdown(AbstractServer.java:300)
+10:01:16,406 INFO  [STDOUT] 	at org.jboss.Main$ShutdownHook$1.run(Main.java:1005)
+10:01:16,406 INFO  [STDOUT] )
+10:01:16,411 INFO  [service] PSC_CSPCS005 : Service remove, Name: com.sun.portal.container.service.DeploymentService_Local
+10:01:16,412 INFO  [service] PSC_CSPCS005 : Service remove, Name: com.sun.portal.container.service.PolicyService
+10:01:16,412 INFO  [service] PSC_CSPCS005 : Service remove, Name: com.sun.portal.container.service.CoordinationService
+10:01:16,412 INFO  [service] PSC_CSPCS005 : Service remove, Name: com.sun.portal.container.service.ClientCachingService
+10:01:16,412 INFO  [service] PSC_CSPCS005 : Service remove, Name: com.sun.portal.container.service.ContainerEventService
+10:01:16,413 INFO  [service] PSC_CSPCS005 : Service remove, Name: com.sun.portal.container.service.CachingService
+10:01:16,413 INFO  [[/silverpeas]] Closing Spring root WebApplicationContext
+10:01:16,490 INFO  [SessionFactoryImpl] closing
+10:01:16,495 INFO  [SessionFactoryImpl] closing
+10:01:16,572 INFO  [ProxyFactory] Unbind EJB Home 'YellowpagesBm' from jndi 'ejb/YellowpagesBm'
+10:01:16,580 INFO  [EjbModule] Undeployed YellowpagesBm
+10:01:16,593 INFO  [ProxyFactory] Unbind EJB Home 'webSitesBm' from jndi 'ejb/webSitesBm'
+10:01:16,596 INFO  [EjbModule] Undeployed webSitesBm
+10:01:16,611 INFO  [ProxyFactory] Unbind EJB Home 'Versioning' from jndi 'ejb/Versioning'
+10:01:16,612 INFO  [EjbModule] Undeployed Versioning
+10:01:16,621 INFO  [ProxyFactory] Unbind EJB Home 'TagCloudBm' from jndi 'ejb/TagCloudBm'
+10:01:16,623 INFO  [EjbModule] Undeployed TagCloudBm
+10:01:16,632 INFO  [ProxyFactory] Unbind EJB Home 'StatisticBm' from jndi 'ejb/StatisticBm'
+10:01:16,634 INFO  [EjbModule] Undeployed StatisticBm
+10:01:16,647 INFO  [ProxyFactory] Unbind EJB Home 'ScoreBm' from jndi 'ejb/ScoreBm'
+10:01:16,648 INFO  [EjbModule] Undeployed ScoreBm
+10:01:16,649 INFO  [ProxyFactory] Unbind EJB Home 'AnswerBm' from jndi 'ejb/AnswerBm'
+10:01:16,650 INFO  [EjbModule] Undeployed AnswerBm
+10:01:16,650 INFO  [ProxyFactory] Unbind EJB Home 'QuestionBm' from jndi 'ejb/QuestionBm'
+10:01:16,651 INFO  [EjbModule] Undeployed QuestionBm
+10:01:16,652 INFO  [ProxyFactory] Unbind EJB Home 'QuestionContainerBm' from jndi 'ejb/QuestionContainerBm'
+10:01:16,653 INFO  [EjbModule] Undeployed QuestionContainerBm
+10:01:16,653 INFO  [ProxyFactory] Unbind EJB Home 'QuestionResultBm' from jndi 'ejb/QuestionResultBm'
+10:01:16,654 INFO  [EjbModule] Undeployed QuestionResultBm
+10:01:16,662 INFO  [ProxyFactory] Unbind EJB Home 'Publication' from jndi 'ejb/Publication'
+10:01:16,664 INFO  [EjbModule] Undeployed Publication
+10:01:16,664 INFO  [ProxyFactory] Unbind EJB Home 'PublicationBm' from jndi 'ejb/PublicationBm'
+10:01:16,665 INFO  [EjbModule] Undeployed PublicationBm
+10:01:16,672 INFO  [ProxyFactory] Unbind EJB Home 'ProjectManagerBm' from jndi 'ejb/ProjectManagerBm'
+10:01:16,673 INFO  [EjbModule] Undeployed ProjectManagerBm
+10:01:16,681 INFO  [ProxyFactory] Unbind EJB Home 'ProcessManagerBm' from jndi 'ejb/ProcessManagerBm'
+10:01:16,683 INFO  [EjbModule] Undeployed ProcessManagerBm
+10:01:16,693 INFO  [ProxyFactory] Unbind EJB Home 'InterestCenter' from jndi 'ejb/InterestCenter'
+10:01:16,695 INFO  [EjbModule] Undeployed InterestCenter
+10:01:16,696 INFO  [ProxyFactory] Unbind EJB Home 'pdcSubscription' from jndi 'ejb/pdcSubscription'
+10:01:16,698 INFO  [EjbModule] Undeployed pdcSubscription
+10:01:16,698 INFO  [ProxyFactory] Unbind EJB Home 'PdcBm' from jndi 'ejb/PdcBm'
+10:01:16,700 INFO  [EjbModule] Undeployed PdcBm
+10:01:16,701 INFO  [ProxyFactory] Unbind EJB Home 'ThesaurusBm' from jndi 'ejb/ThesaurusBm'
+10:01:16,703 INFO  [EjbModule] Undeployed ThesaurusBm
+10:01:16,716 INFO  [ProxyFactory] Unbind EJB Home 'NotationBm' from jndi 'ejb/NotationBm'
+10:01:16,718 INFO  [EjbModule] Undeployed NotationBm
+10:01:16,727 INFO  [ProxyFactory] Unbind EJB Home 'NodeBm' from jndi 'ejb/NodeBm'
+10:01:16,728 INFO  [EjbModule] Undeployed NodeBm
+10:01:16,728 INFO  [ProxyFactory] Unbind EJB Home 'CoordinatesBm' from jndi 'ejb/CoordinatesBm'
+10:01:16,729 INFO  [EjbModule] Undeployed CoordinatesBm
+10:01:16,729 INFO  [ProxyFactory] Unbind EJB Home 'Node' from jndi 'ejb/Node'
+10:01:16,731 INFO  [EjbModule] Undeployed Node
+10:01:16,736 INFO  [ProxyFactory] Unbind EJB Home 'MyLinks' from jndi 'ejb/MyLinks'
+10:01:16,737 INFO  [EjbModule] Undeployed MyLinks
+10:01:16,743 INFO  [ProxyFactory] Unbind EJB Home 'MyDBBm' from jndi 'ejb/MyDBBm'
+10:01:16,744 INFO  [EjbModule] Undeployed MyDBBm
+10:01:16,753 INFO  [ProxyFactory] Unbind EJB Home 'KmeliaBm' from jndi 'ejb/KmeliaBm'
+10:01:16,754 INFO  [EjbModule] Undeployed KmeliaBm
+10:01:16,761 INFO  [ProxyFactory] Unbind EJB Home 'GalleryBm' from jndi 'ejb/GalleryBm'
+10:01:16,762 INFO  [EjbModule] Undeployed GalleryBm
+10:01:16,769 INFO  [ProxyFactory] Unbind EJB Home 'ForumsBM' from jndi 'ejb/ForumsBM'
+10:01:16,770 INFO  [EjbModule] Undeployed ForumsBM
+10:01:16,776 INFO  [ProxyFactory] Unbind EJB Home 'FormTemplateBm' from jndi 'ejb/FormTemplateBm'
+10:01:16,777 INFO  [EjbModule] Undeployed FormTemplateBm
+10:01:16,783 INFO  [ProxyFactory] Unbind EJB Home 'FavoritBm' from jndi 'ejb/FavoritBm'
+10:01:16,784 INFO  [EjbModule] Undeployed FavoritBm
+10:01:16,793 INFO  [ProxyFactory] Unbind EJB Home 'ContactBm' from jndi 'ejb/ContactBm'
+10:01:16,794 INFO  [EjbModule] Undeployed ContactBm
+10:01:16,795 INFO  [ProxyFactory] Unbind EJB Home 'Contact' from jndi 'ejb/Contact'
+10:01:16,796 INFO  [EjbModule] Undeployed Contact
+10:01:16,816 INFO  [ProxyFactory] Unbind EJB Home 'ClipboardBm' from jndi 'ejb/ClipboardBm'
+10:01:16,817 INFO  [EjbModule] Undeployed ClipboardBm
+10:01:16,827 INFO  [ProxyFactory] Unbind EJB Home 'CalendarBm' from jndi 'ejb/CalendarBm'
+10:01:16,828 INFO  [EjbModule] Undeployed CalendarBm
+10:01:16,836 INFO  [ProxyFactory] Unbind EJB Home 'AuthenticationBm' from jndi 'ejb/AuthenticationBm'
+10:01:16,837 INFO  [EjbModule] Undeployed AuthenticationBm
+10:01:16,849 INFO  [ProxyFactory] Unbind EJB Home 'AlmanachBm' from jndi 'ejb/AlmanachBm'
+10:01:16,850 INFO  [EjbModule] Undeployed AlmanachBm
+10:01:16,858 INFO  [ProxyFactory] Unbind EJB Home 'AdminBm' from jndi 'ejb/AdminBm'
+10:01:16,859 INFO  [EjbModule] Undeployed AdminBm
+10:01:16,917 INFO  [ClientENCInjectionContainer] STOPPED CLIENT ENC CONTAINER: tagsoup-1.2.1
+10:01:16,964 INFO  [EJBContainer] STOPPED EJB: com.stratelia.silverpeas.silverstatistics.control.SilverStatisticsMessageDriven ejbName: SilverStatisticsMessageDriven
+10:01:17,085 INFO  [ClientENCInjectionContainer] STOPPED CLIENT ENC CONTAINER: metadata-extractor-2.6.2
+10:01:17,096 INFO  [ClientENCInjectionContainer] STOPPED CLIENT ENC CONTAINER: jackrabbit-jcr-commons-2.5.1
+10:01:17,100 INFO  [ClientENCInjectionContainer] STOPPED CLIENT ENC CONTAINER: itext-2.1.7
+10:01:17,110 INFO  [ClientENCInjectionContainer] STOPPED CLIENT ENC CONTAINER: freshcookies-security-0.60
+10:01:17,149 INFO  [ClientENCInjectionContainer] STOPPED CLIENT ENC CONTAINER: commons-compress-1.3
+10:01:17,186 INFO  [EJBContainer] STOPPED EJB: com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener ejbName: com.stratelia.silverpeas.notificationserver.channel.popup.POPUPListener
+10:01:17,224 INFO  [EJBContainer] STOPPED EJB: com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener ejbName: com.stratelia.silverpeas.notificationserver.channel.smtp.SMTPListener
+10:01:17,243 INFO  [EJBContainer] STOPPED EJB: com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener ejbName: com.stratelia.silverpeas.notificationserver.channel.server.SERVERListener
+10:01:17,267 INFO  [EJBContainer] STOPPED EJB: com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener ejbName: com.stratelia.silverpeas.notificationserver.channel.silvermail.SILVERMAILListener
+10:01:17,283 INFO  [EJBContainer] STOPPED EJB: com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener ejbName: com.stratelia.silverpeas.notificationserver.channel.remove.REMOVEListener
+10:01:17,469 INFO  [TomcatDeployment] undeploy, ctxPath=/
+10:01:17,550 INFO  [ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=/datasources/silverpeas' from JNDI name 'java:/datasources/silverpeas'
+10:01:17,581 INFO  [ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=/datasources/silverpeas-jdbc' from JNDI name 'java:/datasources/silverpeas-jdbc'
+10:01:17,590 INFO  [ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' from JNDI name 'java:JmsXA'
+10:01:17,598 INFO  [ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=/datasources/DocumentStoreDS' from JNDI name 'java:/datasources/DocumentStoreDS'
+10:01:17,609 INFO  [PersistenceUnitDeployment] Stopping persistence unit persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+10:01:17,610 INFO  [SessionFactoryImpl] closing
+10:01:17,610 INFO  [SessionFactoryObjectFactory] Unbinding factory from JNDI name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+10:01:17,611 INFO  [NamingHelper] JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+10:01:17,611 INFO  [SessionFactoryObjectFactory] Unbound factory from JNDI name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+10:01:17,612 INFO  [ConnectionFactoryBindingService] Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' from JNDI name 'java:DefaultDS'
+10:01:17,758 INFO  [HypersonicDatabase] Database standalone closed clean
+10:01:17,762 INFO  [QuartzScheduler] Scheduler JBossQuartzScheduler_$_NON_CLUSTERED shutting down.
+10:01:17,763 INFO  [QuartzScheduler] Scheduler JBossQuartzScheduler_$_NON_CLUSTERED paused.
+10:01:17,764 INFO  [QuartzScheduler] Scheduler JBossQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+10:01:17,766 WARN  [ComponentDeploymentContext] Removing name on null names: jboss.naming:application=quartz-ra
+10:01:17,769 WARN  [ComponentDeploymentContext] Removing name on null names: jboss.naming:application=mail-ra
+10:01:17,808 INFO  [HornetQResourceAdapter] HornetQ resource adapter stopped
+10:01:17,809 WARN  [ComponentDeploymentContext] Removing name on null names: jboss.naming:application=jms-ra
+10:01:17,815 WARN  [ComponentDeploymentContext] Removing name on null names: jboss.naming:application=jboss-xa-jdbc
+10:01:17,820 WARN  [ComponentDeploymentContext] Removing name on null names: jboss.naming:application=jboss-local-jdbc
+10:01:17,850 INFO  [TomcatDeployment] undeploy, ctxPath=/invoker
+10:01:17,901 INFO  [jbossatx] ARJUNA-32018 Destroying TransactionManagerService
+10:01:17,920 INFO  [jbossatx] ARJUNA-32014 Stopping transaction recovery manager
+10:01:18,071 INFO  [HornetQServerImpl] HornetQ Server version 2.2.5.Final (HQ_2_2_5_FINAL_AS7, 121) [02a24927-aee1-11e1-8c14-00269ebff5eb] stopped
+10:01:18,540 INFO  [MailService] Mail service 'java:/Mail' removed from JNDI
+10:01:18,550 INFO  [JMXConnector] JMXConnector stopped
+10:01:20,812 INFO  [AbstractServer] Stopped: JBossAS [6.1.0.Final "Neo"] in 4s:883ms

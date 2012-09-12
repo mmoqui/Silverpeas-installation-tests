@@ -1,0 +1,44 @@
+<configuration xsi:schemaLocation="urn:hornetq /schema/hornetq-jms.xsd" xmlns="urn:hornetq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+   <connection-factory name="NettyConnectionFactory">
+      <xa>true</xa>
+      <connectors>
+         <connector-ref connector-name="netty"></connector-ref>
+      </connectors>
+      <entries>
+         <entry name="/ConnectionFactory"></entry>
+         <entry name="/XAConnectionFactory"></entry>
+      </entries>
+   <confirmation-window-size>10000000</confirmation-window-size></connection-factory>
+   
+   <connection-factory name="NettyThroughputConnectionFactory">
+      <xa>true</xa>
+	   <connectors>
+         <connector-ref connector-name="netty-throughput"></connector-ref>
+	   </connectors>
+		<entries>
+			<entry name="/ThroughputConnectionFactory"></entry>
+			<entry name="/XAThroughputConnectionFactory"></entry>
+		</entries>
+	<confirmation-window-size>10000000</confirmation-window-size></connection-factory>
+   
+   <connection-factory name="InVMConnectionFactory">
+      <xa>true</xa>
+      <connectors>
+         <connector-ref connector-name="in-vm"></connector-ref>
+      </connectors>
+      <entries>
+         <entry name="java:/ConnectionFactory"></entry>
+         <entry name="java:/XAConnectionFactory"></entry>
+      </entries>
+   <confirmation-window-size>10000000</confirmation-window-size></connection-factory>
+   
+   <queue name="DLQ">
+      <entry name="/queue/DLQ"></entry>
+   </queue>
+   
+   <queue name="ExpiryQueue">
+      <entry name="/queue/ExpiryQueue"></entry>
+   </queue>
+
+</configuration>
