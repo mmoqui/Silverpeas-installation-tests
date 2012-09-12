@@ -4,9 +4,9 @@
 
 <fileset root="${SILVERPEAS_HOME}/properties/org/silverpeas/mailinglist/">
     <configfile name="notification.properties">
-      <parameter key="mail.server.login">my.tests@silverpeas.com</parameter>
-      <parameter key="mail.server.password"><![CDATA[$tr@t&li@]]></parameter>
-      <parameter key="mail.server.host">imap.gmail.com</parameter>
+      <parameter key="mail.server.login">test@silverpeas.com</parameter>
+      <parameter key="mail.server.password"><![CDATA[test]]></parameter>
+      <parameter key="mail.server.host">imap.silverpeas.com</parameter>
       <parameter key="mail.server.protocol">imaps</parameter>
       <parameter key="mail.server.port">993</parameter>
       <parameter key="mail.server.leave">true</parameter>
