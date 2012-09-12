@@ -18,26 +18,17 @@ ARCHIVE=silverpeas-${VERSION}-jboss6.tar.gz
 JBOSS=jboss-as-distribution-6.1.0.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}"
 JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final"
-logfile=result.log
-log="$WORKING_DIR/$logfile"
 
 function msg {
   echo
   echo "$1"
-  #>> "$log"
 }
 
 function die {
   msg "$1"
-  report
   cd
   rm -r "$WORKING_DIR"
   exit 1
-}
-
-function report {
-  cd "$WORKING_DIR"
-  #sendmail "Result of the Silverpeas installation test" "$logfile"
 }
 
 function runtest {
@@ -50,15 +41,16 @@ function runtest {
   echo "DB_PASSWD=silverpeas" >> config.properties
   echo "DB_SERVERTYPE=${RDBMS[1]}"  >> config.properties
   echo "DB_SERVER=${RDBMS[0]}" >> config.properties
-  database create ${RDBMS[1]} ${RDBMS[0]} >> "$log"
+  database create ${RDBMS[1]} ${RDBMS[0]} 
   test $? -eq 0 || die "Cannot create the database silvertest for ${RDBMS[1]} on ${RDBMS[0]}"
-  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final" buildsilverpeas >> "$log"
-  database delete ${RDBMS[1]} ${RDBMS[0]} >> "$log"
+  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final" buildsilverpeas
+  ret=$?
+  database delete ${RDBMS[1]} ${RDBMS[0]}
+  test $ret -eq 0 || die "Installation test for ${RDBMS[1]} failed!"
   msg "Installation test for ${RDBMS[1]} done"
 }
 
 cd "$WORKING_DIR"
-touch "$log"
 msg "Fetching and extraction of the archive ${JBOSS}..."
 unzip $WORKSPACE/settings/$JBOSS
 test $? -eq 0 || die "Cannot open the archive ${JBOSS}"
@@ -74,7 +66,6 @@ msg "... done"
 runtest $postgresql:POSTGRES
 runtest $mssql:MSSQL
 
-report
 cd 
 rm -r $WORKING_DIR
 exit 0

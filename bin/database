@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-tooldir=$HOME/bin/databasetool
+tooldir=$WORKSPACE/bin/databasetool
 
 classpath="$tooldir"
 for jar in `ls "$tooldir"/jar/*.jar`; do

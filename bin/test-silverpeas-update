@@ -19,26 +19,17 @@ SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}"
 JBOSS_HOME=$WORKSPACE/jboss-6.1.0.Final
 customconf=$WORKSPACE/settings/CustomerSettings.xml
 oracledriver=$WORKSPACE/settings/ojdbc6_g.jar
-logfile=result.log
-log="$WORKING_DIR/$logfile"
 
 function msg {
   echo
   echo "$1"
-  #>> "$log"
 }
 
 function die {
   msg "$1"
-  report
   cd
   rm -r "$WORKING_DIR"
   exit 1
-}
-
-function report {
-  cd "$WORKING_DIR"
- # sendmail "Result of the Silverpeas update test" "$logfile"
 }
 
 function runtest {
@@ -51,26 +42,26 @@ function runtest {
   echo "DB_PASSWD=silverpeas" >> config.properties
   echo "DB_SERVERTYPE=${RDBMS[1]}"  >> config.properties
   echo "DB_SERVER=${RDBMS[0]}" >> config.properties
-  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKSPACE/jboss-6.1.0.Final" buildsilverpeas >> "$log"
+  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKSPACE/jboss-6.1.0.Final" buildsilverpeas
+  ret=$?
+  test $ret -eq 0 || die "Update test for ${RDBMS[1]} done"
   msg "Update test for ${RDBMS[1]} done"
 }
 
 cd "$WORKING_DIR"
-touch "$log"
 msg "Fetching and extraction of the archive ${ARCHIVE}..."
 wget $repo/$ARCHIVE
 test $? -eq 0 || die "Cannot fetch the archive ${ARCHIVE}"
 tar zxvf $ARCHIVE
 test $? -eq 0 || die "Cannot open the archive ${ARCHIVE}"
 msg "... done" 
-cp "$customconf" "$SILVERPEAS_HOME"/setup/settings/ >> "$log"
-cp "$oracledriver" "$SILVERPEAS_HOME"/bin/jar >> "$log"
+cp "$customconf" "$SILVERPEAS_HOME"/setup/settings/
+cp "$oracledriver" "$SILVERPEAS_HOME"/bin/jar
 
 runtest $postgresql:POSTGRES
 runtest $mssql:MSSQL
 runtest $oracle:ORACLE
 
-report
 cd 
 rm -r $WORKING_DIR
 exit 0

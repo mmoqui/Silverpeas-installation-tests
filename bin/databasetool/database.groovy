@@ -30,7 +30,7 @@ switch(rdbms) {
     break;
   case 'MSSQL':
     sql = Sql.newInstance('jdbc:jtds:sqlserver://' + host + ':1433',
-      'sa', 'wanabe@STAR', 'net.sourceforge.jtds.jdbc.Driver')
+      'sa', 'dauph1DO', 'net.sourceforge.jtds.jdbc.Driver')
     break;
   default:
     println "The RDBMS ${rdbms} isn't currently supported!"
