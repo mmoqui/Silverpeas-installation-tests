@@ -43,7 +43,7 @@ function runtest {
   echo "DB_SERVER=${RDBMS[0]}" >> config.properties
   database create ${RDBMS[1]} ${RDBMS[0]} 
   test $? -eq 0 || die "Cannot create the database silvertest for ${RDBMS[1]} on ${RDBMS[0]}"
-  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final" buildsilverpeas
+  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final" RDBMS="${RDBMS[1]}" buildsilverpeas
   ret=$?
   database delete ${RDBMS[1]} ${RDBMS[0]}
   test $ret -eq 0 || die "Installation test for ${RDBMS[1]} failed!"

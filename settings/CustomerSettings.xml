@@ -2,8 +2,12 @@
 
 <silverpeas-settings product="Custom">
 
-<fileset root="${SILVERPEAS_HOME}/properties/org/silverpeas/mailinglist/">
-    <configfile name="notification.properties">
+  <fileset root="${SILVERPEAS_HOME}/properties/org/silverpeas/">
+    <configfile name="util/jcr.properties">
+      <parameter key="jcr.home.dir.url">file://${WORKSPACE}/settings/jackrabbit/${RDBMS}</parameter>
+    </configfile>
+
+    <configfile name="mailinglist/notification.properties">
       <parameter key="mail.server.login">test@silverpeas.com</parameter>
       <parameter key="mail.server.password"><![CDATA[test]]></parameter>
       <parameter key="mail.server.host">imap.silverpeas.com</parameter>
@@ -11,11 +15,9 @@
       <parameter key="mail.server.port">993</parameter>
       <parameter key="mail.server.leave">true</parameter>
       <parameter key="task.creator.id">0</parameter>
-       <parameter key="mail.check.frequency">1</parameter>
+      <parameter key="mail.check.frequency">1</parameter>
     </configfile>
-  </fileset>
-
-  <fileset root="${SILVERPEAS_HOME}/properties/org/silverpeas/">
+    
     <configfile name="notificationserver/channel/smtp/smtpSettings.properties">
       <parameter key="SMTPServer">localhost</parameter>
       <parameter key="SMTPPort">25</parameter>
@@ -26,7 +28,6 @@
       <parameter key="SMTPSecure">false</parameter>
     </configfile>
   </fileset>
-
 
   <fileset root="${SILVERPEAS_HOME}/initialize/">
     <configfile name="systemSettings.properties">

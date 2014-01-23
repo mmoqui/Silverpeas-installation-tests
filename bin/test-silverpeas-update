@@ -42,7 +42,7 @@ function runtest {
   echo "DB_PASSWD=silverpeas" >> config.properties
   echo "DB_SERVERTYPE=${RDBMS[1]}"  >> config.properties
   echo "DB_SERVER=${RDBMS[0]}" >> config.properties
-  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKSPACE/jboss-6.1.0.Final" buildsilverpeas
+  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKSPACE/jboss-6.1.0.Final" RDBMS="${RDBMS[1]}" buildsilverpeas
   ret=$?
   test $ret -eq 0 || die "Update test for ${RDBMS[1]} failed!"
   msg "Update test for ${RDBMS[1]} done"
