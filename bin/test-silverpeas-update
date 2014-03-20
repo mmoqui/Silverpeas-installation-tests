@@ -5,9 +5,9 @@ test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/default-java
 
 WORKING_DIR="$WORKSPACE/test-update"
 repo=http://repository.silverpeas.org/files
-mssql=88.190.231.237
-postgresql=88.190.231.222
-oracle=88.190.223.108
+mssql=212.83.178.178
+postgresql=212.83.178.177
+oracle=212.83.178.176
 
 mkdir "$WORKING_DIR"
 cd "$WORKING_DIR"
