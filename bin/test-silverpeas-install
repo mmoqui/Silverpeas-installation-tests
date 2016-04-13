@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 PATH=$PATH:$WORKSPACE/bin
-test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/default-java
+test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+test "Z$WORKSPACE" = "Z" && die "WORKSPACE environment variable isn't set!"
 
 WORKING_DIR="$WORKSPACE/test-install"
 repo=http://repository.silverpeas.org/files
@@ -14,10 +15,10 @@ cd "$WORKING_DIR"
 wget $repo/latest-dev
 
 VERSION=`cat latest-dev`
-ARCHIVE=silverpeas-${VERSION}-jboss6.tar.gz
-JBOSS=jboss-as-distribution-6.1.0.Final.zip
-SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}"
-JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final"
+SILVERPEAS=silverpeas-${VERSION}-wildfly10.zip
+JBOSS=wildfly-10.0.0.Final.zip
+SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
+JBOSS_HOME="$WORKING_DIR/${JBOSS%.zip}"
 
 function msg {
   echo
@@ -27,23 +28,23 @@ function msg {
 function die {
   msg "$1"
   cd
-  rm -r "$WORKING_DIR"
+  rm -r "$WORKING_DIR" 2>/dev/null
   exit 1
 }
 
 function runtest {
   IFS=':' read -ra RDBMS <<< "$1"
   msg "Installation test for ${RDBMS[1]}"
-  cd "$SILVERPEAS_HOME/setup/settings"
-  rm -f config.properties
-  echo "DB_NAME=silvertest" > config.properties
-  echo "DB_USER=silverpeas" >> config.properties
-  echo "DB_PASSWD=silverpeas" >> config.properties
-  echo "DB_SERVERTYPE=${RDBMS[1]}"  >> config.properties
-  echo "DB_SERVER=${RDBMS[0]}" >> config.properties
+  cd "$SILVERPEAS_HOME"
+  rm -f configuration/config.properties
+  echo "DB_NAME=silvertest" > configuration/config.properties
+  echo "DB_USER=silverpeas" >> configuration/config.properties
+  echo "DB_PASSWORD=silverpeas" >> configuration/config.properties
+  echo "DB_SERVERTYPE=${RDBMS[1]}"  >> configuration/config.properties
+  echo "DB_SERVER=${RDBMS[0]}" >> configuration/config.properties
   database create ${RDBMS[1]} ${RDBMS[0]} 
   test $? -eq 0 || die "Cannot create the database silvertest for ${RDBMS[1]} on ${RDBMS[0]}"
-  SILVERPEAS_HOME="$WORKING_DIR/${ARCHIVE%.tar.gz}" JBOSS_HOME="$WORKING_DIR/jboss-6.1.0.Final" RDBMS="${RDBMS[1]}" buildsilverpeas
+  SILVERPEAS_HOME="$SILVERPEAS_HOME" JBOSS_HOME="$JBOSS_HOME" bin/silverpeas clean install
   ret=$?
   database delete ${RDBMS[1]} ${RDBMS[0]}
   test $ret -eq 0 || die "Installation test for ${RDBMS[1]} failed!"
@@ -51,19 +52,16 @@ function runtest {
 }
 
 cd "$WORKING_DIR"
-msg "Fetching and extraction of the archive ${JBOSS}..."
-unzip $WORKSPACE/settings/$JBOSS
-test $? -eq 0 || die "Cannot open the archive ${JBOSS}"
-msg "... done"
-msg "Fetching and extraction of the archive ${ARCHIVE}..."
-wget $repo/$ARCHIVE
-test $? -eq 0 || die "Cannot fetch the archive ${ARCHIVE}"
-msg "... done"
-tar zxvf $ARCHIVE
-test $? -eq 0 || die "Cannot open the archive ${ARCHIVE}"
-msg "... done" 
+for archive in "$JBOSS $SILVERPEAS"; do
+  msg "Fetching and extraction of the archive ${archive}..."
+  wget $repo/$archive
+  test $? -eq 0 || die "Cannot fetch the archive ${archive}"
+  unzip $WORKSPACE/$archive
+  test $? -eq 0 || die "Cannot open the archive ${archive}"
+  msg "... done"
+done
 
-runtest $postgresql:POSTGRES
+runtest $postgresql:POSTGRESQL
 runtest $mssql:MSSQL
 
 cd 

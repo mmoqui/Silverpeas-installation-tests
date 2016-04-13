@@ -3,14 +3,20 @@
 <silverpeas-settings product="Custom">
 
   <fileset root="${SILVERPEAS_HOME}/properties/org/silverpeas/">
-    <configfile name="util/jcr.properties">
-      <parameter key="jcr.home.dir.url">file://${WORKSPACE}/settings/jackrabbit/${RDBMS}</parameter>
+    <configfile name="systemSettings.properties">
+      <parameter key="mail.imaps.connectionpool.debug">false</parameter>
+      <parameter key="mail.smtp.ssl.enable">false</parameter>
+      <!--
+      <parameter key="javax.net.ssl.trustStore">${SILVERPEAS_HOME}/bin/truststore.jks</parameter>
+      <parameter key="mail.imap.ssl.trust">*</parameter>
+      <parameter key="mail.imap.ssl.checkserveridentity">false</parameter>
+      -->
     </configfile>
 
     <configfile name="mailinglist/notification.properties">
       <parameter key="mail.server.login">test@silverpeas.com</parameter>
       <parameter key="mail.server.password"><![CDATA[test]]></parameter>
-      <parameter key="mail.server.host">imap.silverpeas.com</parameter>
+      <parameter key="mail.server.host">imap.googlemail.com</parameter>
       <parameter key="mail.server.protocol">imaps</parameter>
       <parameter key="mail.server.port">993</parameter>
       <parameter key="mail.server.leave">true</parameter>
@@ -19,24 +25,14 @@
     </configfile>
     
     <configfile name="notificationserver/channel/smtp/smtpSettings.properties">
-      <parameter key="SMTPServer">localhost</parameter>
-      <parameter key="SMTPPort">25</parameter>
-      <parameter key="SMTPUser"></parameter>
-      <parameter key="SMTPPwd"></parameter>
+      <parameter key="SMTPServer">smtp.googlemail.com</parameter>
+      <parameter key="SMTPPort">465</parameter>
+      <parameter key="SMTPUser">my.tests@silverpeas.com</parameter>
+      <parameter key="SMTPPwd"><![CDATA[$tr@t&li@]]></parameter>
       <parameter key="SMTPAuthentication">false</parameter>
       <parameter key="SMTPDebug">true</parameter>
-      <parameter key="SMTPSecure">false</parameter>
+      <parameter key="SMTPSecure">true</parameter>
     </configfile>
   </fileset>
 
-  <fileset root="${SILVERPEAS_HOME}/initialize/">
-    <configfile name="systemSettings.properties">
-      <parameter key="mail.imaps.connectionpool.debug">false</parameter>
-      <parameter key="mail.smtp.ssl.enable">false</parameter>
-      <parameter key="javax.net.ssl.trustStore">${SILVERPEAS_HOME}/bin/truststore.jks</parameter>
-<!--      <parameter key="mail.imap.ssl.trust" mode="insert">*</parameter>
-      <parameter key="mail.imap.ssl.checkserveridentity" mode="insert">false</parameter>-->
-    </configfile>
-  </fileset>
-  
  </silverpeas-settings>

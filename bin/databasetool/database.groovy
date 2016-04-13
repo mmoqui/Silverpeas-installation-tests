@@ -24,7 +24,7 @@ String rdbms  = args[1]
 String host   = (args.length == 3 ? args[2]:"localhost")
 def sql
 switch(rdbms) {
-  case 'POSTGRES':
+  case 'POSTGRESQL':
     sql = Sql.newInstance('jdbc:postgresql://' + host + ':5432/',
       'postgres', 'postgres', 'org.postgresql.Driver')
     break;
