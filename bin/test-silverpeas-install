@@ -7,7 +7,7 @@ test "Z$WORKSPACE" = "Z" && die "WORKSPACE environment variable isn't set!"
 WORKING_DIR="$WORKSPACE/test-install"
 repo=http://repository.silverpeas.org/files
 mssql=212.83.178.178
-postgresql=212.83.178.177
+postgresql=195.154.50.27
 oracle=212.83.178.176
 
 mkdir "$WORKING_DIR"
