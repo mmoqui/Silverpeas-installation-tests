@@ -19,7 +19,7 @@ function runtest {
   rm -f configuration/config.properties
   echo "DB_NAME=SilverUpdate" > configuration/config.properties
   echo "DB_USER=silverpeas" >> configuration/config.properties
-  echo "DB_PASSWD=silverpeas" >> configuration/config.properties
+  echo "DB_PASSWORD=silverpeas" >> configuration/config.properties
   echo "DB_SERVERTYPE=${RDBMS[1]}"  >> configuration/config.properties
   echo "DB_SERVER=${RDBMS[0]}" >> configuration/config.properties
   SILVERPEAS_HOME="$SILVERPEAS_HOME" JBOSS_HOME="$JBOSS_HOME" bin/silverpeas clean install
