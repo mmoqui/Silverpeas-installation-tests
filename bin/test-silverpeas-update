@@ -46,7 +46,7 @@ JBOSS=wildfly-10.0.0.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
 JBOSS_HOME="$WORKING_DIR/${JBOSS%.zip}"
 customconf=$WORKSPACE/settings/CustomerSettings.xml
-oracledriver=$WORKSPACE/settings/ojdbc6_g.jar
+oracledriver=$WORKSPACE/settings/ojdbc7.jar
 
 cd "$WORKING_DIR"
 for archive in $JBOSS $SILVERPEAS; do

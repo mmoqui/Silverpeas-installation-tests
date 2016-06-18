@@ -48,6 +48,7 @@ SILVERPEAS=silverpeas-${VERSION}-wildfly10.zip
 JBOSS=wildfly-10.0.0.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
 JBOSS_HOME="$WORKING_DIR/${JBOSS%.zip}"
+oracledriver=$WORKSPACE/settings/ojdbc7.jar
 
 cd "$WORKING_DIR"
 for archive in $JBOSS $SILVERPEAS; do
@@ -59,8 +60,11 @@ for archive in $JBOSS $SILVERPEAS; do
   msg "... done"
 done
 
+cp "$oracledriver" "$SILVERPEAS_HOME"/bin/lib/
+
 runtest $postgresql:POSTGRESQL
 runtest $mssql:MSSQL
+runtest $oracle:ORACLE
 
 cd 
 rm -r $WORKING_DIR

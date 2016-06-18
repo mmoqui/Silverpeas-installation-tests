@@ -32,6 +32,10 @@ switch(rdbms) {
     sql = Sql.newInstance('jdbc:jtds:sqlserver://' + host + ':1433',
       'sa', 'dauph1DO', 'net.sourceforge.jtds.jdbc.Driver')
     break;
+  case 'ORACLE':
+    sql = Sql.newInstance('jdbc:oracle:thin:@' + host + ':1521:SilverTest',
+      'silverpeas', 'silverpeas', 'oracle.jdbc.driver.OracleDriver')
+    break;
   default:
     println "The RDBMS ${rdbms} isn't currently supported!"
     System.exit(2)
@@ -40,10 +44,34 @@ switch(rdbms) {
 try {
   switch(action) {
     case 'create':
-      sql.execute('create database silvertest')
+      if (rdbms != 'ORACLE') {
+        sql.execute('create database silvertest')
+      }
       break;
     case 'delete':
-      sql.execute('drop database silvertest')
+      if (rdbms != 'ORACLE') {
+        sql.execute('drop database silvertest')
+      } else {
+        sql.execute '''
+BEGIN
+ --Drop Tables, index and constraints!
+    FOR c IN (SELECT object_name,
+                     object_type
+              FROM user_objects
+              WHERE object_type IN ('TABLE') AND object_name NOT LIKE '%$%') LOOP
+        EXECUTE IMMEDIATE 'DROP '
+                             || c.object_type || ' "'
+                             || c.object_name || '" CASCADE CONSTRAINTS';
+    END LOOP;
+    
+ --Drop Sequences!
+  FOR i IN (SELECT us.sequence_name
+              FROM USER_SEQUENCES us) LOOP
+    EXECUTE IMMEDIATE 'drop sequence '|| i.sequence_name ||'';
+  END LOOP;
+END;
+        '''
+      }
       break;
     default:
       println "Unknown action: ${action}"
