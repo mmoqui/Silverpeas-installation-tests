@@ -42,7 +42,7 @@ wget $repo/latest-dev
 
 VERSION=`cat latest-dev`
 SILVERPEAS=silverpeas-${VERSION}-wildfly10.zip
-JBOSS=wildfly-10.0.0.Final.zip
+JBOSS=wildfly-10.1.0.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
 JBOSS_HOME="$WORKING_DIR/${JBOSS%.zip}"
 customconf=$WORKSPACE/settings/CustomerSettings.xml
