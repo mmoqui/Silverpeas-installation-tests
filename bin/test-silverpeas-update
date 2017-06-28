@@ -63,7 +63,7 @@ cp "$oracledriver" "$SILVERPEAS_HOME"/bin/lib/
 
 runtest $postgresql:POSTGRESQL
 runtest $mssql:MSSQL
-#runtest $oracle:ORACLE
+runtest $oracle:ORACLE
 
 cd 
 rm -r $WORKING_DIR
