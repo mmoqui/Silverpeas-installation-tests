@@ -33,7 +33,7 @@ switch(rdbms) {
       'sa', 'dauph1DO', 'net.sourceforge.jtds.jdbc.Driver')
     break;
   case 'ORACLE':
-    sql = Sql.newInstance('jdbc:oracle:thin:@' + host + ':1521:SilverTest',
+    sql = Sql.newInstance('jdbc:oracle:thin:@' + host + ':1521:SILVERTE',
       'silverpeas', 'silverpeas', 'oracle.jdbc.driver.OracleDriver')
     break;
   default:

@@ -17,7 +17,7 @@ function runtest {
   msg "Update test for ${RDBMS[1]}"
   cd "$SILVERPEAS_HOME"
   rm -f configuration/config.properties
-  echo "DB_NAME=SilverUpdate" > configuration/config.properties
+  echo "DB_NAME=$2" > configuration/config.properties
   echo "DB_USER=silverpeas" >> configuration/config.properties
   echo "DB_PASSWORD=silverpeas" >> configuration/config.properties
   echo "DB_SERVERTYPE=${RDBMS[1]}"  >> configuration/config.properties
@@ -61,9 +61,9 @@ done
 cp "$customconf" "$SILVERPEAS_HOME"/configuration/silverpeas/
 cp "$oracledriver" "$SILVERPEAS_HOME"/bin/lib/
 
-runtest $postgresql:POSTGRESQL
-runtest $mssql:MSSQL
-runtest $oracle:ORACLE
+runtest $postgresql:POSTGRESQL "SilverUpdate"
+runtest $mssql:MSSQL "SilverUpdate"
+runtest $oracle:ORACLE "SILVERUPD"
 
 cd 
 rm -r $WORKING_DIR
