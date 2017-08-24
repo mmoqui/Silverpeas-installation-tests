@@ -60,6 +60,7 @@ done
 
 cp "$customconf" "$SILVERPEAS_HOME"/configuration/silverpeas/
 cp "$oracledriver" "$SILVERPEAS_HOME"/bin/lib/
+rm -rf ${HOME}/.gradle/caches
 
 runtest $postgresql:POSTGRESQL "SilverUpdate"
 runtest $mssql:MSSQL "SilverUpdate"

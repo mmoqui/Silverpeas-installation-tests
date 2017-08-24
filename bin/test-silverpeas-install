@@ -61,6 +61,7 @@ for archive in $JBOSS $SILVERPEAS; do
 done
 
 cp "$oracledriver" "$SILVERPEAS_HOME"/bin/lib/
+rm -rf ${HOME}/.gradle/caches
 
 runtest $postgresql:POSTGRESQL "silvertest"
 runtest $mssql:MSSQL "silvertest"
