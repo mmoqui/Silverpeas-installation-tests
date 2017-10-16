@@ -27,7 +27,11 @@ function runtest {
   SILVERPEAS_HOME="$SILVERPEAS_HOME" JBOSS_HOME="$JBOSS_HOME" bin/silverpeas clean install
   ret=$?
   database delete ${RDBMS[1]} ${RDBMS[0]}
-  test $ret -eq 0 || die "Installation test for ${RDBMS[1]} failed!"
+  if [ $ret -ne 0 ]; then
+    cat $SILVERPEAS_HOME/log/build-*.log
+    echo
+    die "Installation test for ${RDBMS[1]} failed!"
+  fi
   msg "Installation test for ${RDBMS[1]} done"
 }
 
