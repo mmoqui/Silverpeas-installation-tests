@@ -6,9 +6,14 @@ f = File.open(ARGV[1])
 content = f.read
 f.close
 
+sender     = 'miguel.moquillon@silverpeas.org'
+recipients = {'Miguel Moquillon'  => 'miguel.moquillon@silverpeas.com', 
+              'Yohann Chastagnier'=> 'yohann.chastagnier@silverpeas.com'}
+
+recipients_str = recipients.map {|n,e| "#{n} <#{e}>"}.join(', ')
 message = <<MESSAGE_END
-From: Silverpeas Test <my.tests@silverpeas.com>
-To: Miguel Moquillon <miguel.moquillon@silverpeas.com>
+From: Jenkins <#{sender}>
+To: #{recipients_str}
 MIME-Version: 1.0
 Content-type: text/plain
 Subject: #{ARGV[0]}
@@ -17,9 +22,8 @@ Subject: #{ARGV[0]}
 
 MESSAGE_END
 
-smtp = Net::SMTP.new 'smtp.gmail.com', 587
-smtp.enable_starttls
-smtp.start('silverpeas.com', 'my.tests@silverpeas.com', '$tr@t&li@', :login) do
-  smtp.send_message(message, 'my.tests@silverpeas.com', 'miguel.moquillon@silverpeas.com')
+Net::SMTP.start('localhost', 25) do |smtp|
+    smtp.send_message message,
+                      sender,
+                      recipients.collect {|n,e| e}
 end
-
