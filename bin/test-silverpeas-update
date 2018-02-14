@@ -36,15 +36,20 @@ PATH=$PATH:$WORKSPACE/bin
 test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 test "Z$WORKSPACE" = "Z" && die "WORKSPACE environment variable isn't set!"
 
+if [ -f core-*-build*.pom ]; then
+  VERSION=`grep -oP "<version>\K6\.[0-9build\-\.]+" core-*-build*.pom`
+  rm core-*-build*.pom
+else
+  die "No available build version to build"
+fi
+
 WORKING_DIR="$WORKSPACE/test-update"
 repo=http://repository.silverpeas.org/files
 source "$WORKSPACE/bin/database.conf"
 
 mkdir "$WORKING_DIR"
 cd "$WORKING_DIR"
-wget $repo/latest-dev
 
-VERSION=`cat latest-dev`
 SILVERPEAS=silverpeas-${VERSION}-wildfly10.zip
 JBOSS=wildfly-10.1.0.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
