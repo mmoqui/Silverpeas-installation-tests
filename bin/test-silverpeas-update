@@ -50,8 +50,8 @@ source "$WORKSPACE/bin/database.conf"
 mkdir "$WORKING_DIR"
 cd "$WORKING_DIR"
 
-SILVERPEAS=silverpeas-${VERSION}-wildfly11.zip
-JBOSS=wildfly-11.0.0.Final.zip
+SILVERPEAS=silverpeas-${VERSION}-wildfly13.zip
+JBOSS=wildfly-13.0.0.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
 JBOSS_HOME="$WORKING_DIR/${JBOSS%.zip}"
 customconf=$WORKSPACE/settings/CustomerSettings.xml
