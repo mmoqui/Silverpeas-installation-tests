@@ -73,7 +73,7 @@ rm -rf ${HOME}/.gradle/caches
 
 runtest $postgresql:POSTGRESQL "SilverUpdate"
 runtest $mssql:MSSQL "SilverUpdate"
-#runtest $oracle:ORACLE "SILVERUPD"
+runtest $oracle:ORACLE "SILVERUPD"
 
 cd 
 rm -r $WORKING_DIR
