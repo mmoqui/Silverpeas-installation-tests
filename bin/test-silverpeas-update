@@ -33,7 +33,7 @@ function runtest {
 }
 
 PATH=$PATH:$WORKSPACE/bin
-test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 test "Z$WORKSPACE" = "Z" && die "WORKSPACE environment variable isn't set!"
 
 if [ -f core-*-build*.pom ]; then
