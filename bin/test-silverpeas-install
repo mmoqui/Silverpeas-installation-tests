@@ -53,8 +53,8 @@ source "$WORKSPACE/bin/database.conf"
 mkdir "$WORKING_DIR"
 cd "$WORKING_DIR"
 
-SILVERPEAS=silverpeas-${VERSION}-wildfly14.zip
-JBOSS=wildfly-14.0.1.Final.zip
+SILVERPEAS=silverpeas-${VERSION}-wildfly15.zip
+JBOSS=wildfly-15.0.1.Final.zip
 SILVERPEAS_HOME="$WORKING_DIR/${SILVERPEAS%.zip}"
 JBOSS_HOME="$WORKING_DIR/${JBOSS%.zip}"
 oracledriver=$WORKSPACE/settings/ojdbc7.jar
