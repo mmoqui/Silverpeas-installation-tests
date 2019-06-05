@@ -39,11 +39,10 @@ PATH=$PATH:$WORKSPACE/bin
 test "Z$JAVA_HOME" = "Z" && export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 test "Z$WORKSPACE" = "Z" && die "WORKSPACE environment variable isn't set!"
 
-if [ -f core-*-build*.pom ]; then
-  VERSION=`grep -oP "<version>\K6\.[0-9build\-\.]+" core-*-build*.pom`
-  rm core-*-build*.pom
+if [ $# -eq 1 ]; then
+  VERSION="$1"
 else
-  die "No available build version to build"
+  die "No available Silverpeas build version specified!"
 fi
 
 WORKING_DIR="$WORKSPACE/test-install"
