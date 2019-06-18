@@ -61,7 +61,7 @@ oracledriver=$WORKSPACE/settings/ojdbc7.jar
 cd "$WORKING_DIR"
 for archive in $JBOSS $SILVERPEAS; do
   msg "Fetching and extraction of the archive ${archive}..."
-  wget $repo/$archive
+  curl -fsSL -o $archive $repo/$archive
   test $? -eq 0 || die "Cannot fetch the archive ${archive}"
   unzip $archive
   test $? -eq 0 || die "Cannot open the archive ${archive}"
