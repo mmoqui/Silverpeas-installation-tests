@@ -1,0 +1,20 @@
+postgresql: 
+  host: 195.154.50.27
+  inst: silvertest
+  updt: SilverUpdate
+  url: jdbc:postgresql://195.154.50.27:5432
+  driver: org.postgresql.Driver
+
+mssql:
+  host: 212.83.178.178
+  inst: silvertest
+  updt: SilverUpdate
+  url: jdbc:jtds:sqlserver://212.83.178.178:1433
+  driver: net.sourceforge.jtds.jdbc.Driver
+
+oracle:
+  host: int3.silverpeas.org
+  inst: SILVERTE
+  updt: SILVERUPD
+  url: jdbc:oracle:thin:@int3.silverpeas.org:1521
+  driver: oracle.jdbc.driver.OracleDriver
