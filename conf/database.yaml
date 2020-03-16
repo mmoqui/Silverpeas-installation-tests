@@ -14,7 +14,7 @@ mssql:
 
 oracle:
   host: int3.silverpeas.org
-  inst: SILVERTE
-  updt: SILVERUPD
+  inst: SILVERTEST
+  updt: SILVERUPDATE
   url: jdbc:oracle:thin:@int3.silverpeas.org:1521
   driver: oracle.jdbc.driver.OracleDriver
