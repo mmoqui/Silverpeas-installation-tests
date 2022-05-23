@@ -2,7 +2,7 @@ postgresql:
   host: int0.silverpeas.org
   inst: silvertest
   updt: SilverUpdate
-  url: jdbc:postgresql://int0.silverpeas.org:5432
+  url: jdbc:postgresql://int0.silverpeas.org:5433
   driver: org.postgresql.Driver
 
 mssql:
