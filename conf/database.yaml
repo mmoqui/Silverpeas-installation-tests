@@ -18,3 +18,11 @@ oracle:
   updt: SILVERUPDATE
   url: jdbc:oracle:thin:@int3.silverpeas.org:1521
   driver: oracle.jdbc.driver.OracleDriver
+
+h2:
+  host: localhost
+  inst: SILVERTEST
+  updt: SILVERUPDATE
+  url: jdbc:h2:tcp://localhost:9092
+  driver: org.h2.Driver
+  
