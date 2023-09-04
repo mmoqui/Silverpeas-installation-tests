@@ -21,8 +21,7 @@ oracle:
 
 h2:
   host: localhost
-  inst: SILVERTEST
-  updt: SILVERUPDATE
+  inst: silvertest
+  updt: SilverUpdate
   url: jdbc:h2:tcp://localhost:9092
   driver: org.h2.Driver
-  
