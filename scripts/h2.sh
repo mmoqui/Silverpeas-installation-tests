@@ -12,11 +12,11 @@ print_help() {
 case "$2" in
     start)
         echo "Start H2 database..."
-        exec java -classpath "$H2_JAR" org.h2.tools.Server -tcp -baseDir "$workdir/h2" -ifNotExists &
+        exec java -classpath "$H2_JAR" org.h2.tools.Server -tcp -baseDir "$workdir/h2" -ifNotExists -tcpPassword sa &
         ;;
     stop)
         echo "Stop H2 database..."
-        exec java -classpath "$H2_JAR" org.h2.tools.Server -tcpShutdown tcp://localhost:9092
+        exec java -classpath "$H2_JAR" org.h2.tools.Server -tcpShutdown tcp://localhost:9092 -tcpPassword sa
         ;;
     *)
         print_help
