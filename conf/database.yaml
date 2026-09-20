@@ -5,12 +5,14 @@ postgresql:
   url: jdbc:postgresql://int0.silverpeas.org:5433
   driver: org.postgresql.Driver
 
+# encrypt=false is required: the Microsoft JDBC driver expects an encrypted connection by default
+# since its version 10 whereas the SQL Server for the tests has no trusted certificate
 mssql:
   host: int1.silverpeas.org
   inst: silvertest
   updt: SilverUpdate
-  url: jdbc:jtds:sqlserver://int1.silverpeas.org:1433
-  driver: net.sourceforge.jtds.jdbc.Driver
+  url: jdbc:sqlserver://int1.silverpeas.org:1433;encrypt=false
+  driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
 oracle:
   host: int3.silverpeas.org
